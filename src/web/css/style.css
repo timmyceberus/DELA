@@ -56,29 +56,24 @@ nav #login {
 
 #title h1 {
   user-select: none;
-  position: absolute;
+  position: relative;
   text-align: center;
-  font-size: 10em;
-  top: 150px;
-  left: 200px;
-  animation-delay: 0.2s; /* Animate.css delay */
+  font-size: 10vw;
+  top: -5em;
+  left: -1.7em;
+  animation-delay: 0.2s;
 }
 
 #title h6 {
   user-select: none;
-  position: absolute;
+  position: relative;
   text-align: center;
-  font-size: 1.3em;
-  top: 350px;
-  left: 220px;
+  font-size: 1.3vw;
+  top: -38em;
+  left: -15em;
   animation-delay: 0.7s;
 }
 
-#section {
-  height: 100%;
-  height: 50em;
-}
-
-/* @media screen and (maw-width:600px){
+/* @media screen and (max-width:600px){
   image {width: 100%;}
 } */
