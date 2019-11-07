@@ -33,11 +33,13 @@ nav li a {
   display: block;
   color: white;
   text-align: center;
-  padding: 8px 20px;
+  padding: 18px 20px;
   text-decoration: none;
 }
 
 nav li a:hover {
+  color: white;
+  text-decoration: none;
   opacity: 0.9;
 }
 
@@ -45,13 +47,7 @@ nav #login {
   position: absolute;
   top: 10px;
   right: 10px;
-  color: white;
-  background-color: red;
-  outline: none;
-  border-radius: 5px;
-  border: 0;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding: auto;
 }
 
 #title {
@@ -59,6 +55,7 @@ nav #login {
 }
 
 h1 {
+  user-select: none;
   position: absolute;
   text-align: center;
   font-size: 10em;
