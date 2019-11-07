@@ -18,11 +18,11 @@ nav ul {
   padding: 0;
   overflow: hidden;
 }
-  
+
 nav li {
   float: left; /* Horizontal Navigation */
 }
-  
+
 nav li a {
   display: block;
   color: white;
@@ -35,7 +35,7 @@ nav li a:hover {
   opacity: 0.9;
 }
 
-nav #login{
+nav #login {
   position: absolute;
   top: 10px;
   right: 10px;
