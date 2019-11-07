@@ -2,6 +2,11 @@ body {
   margin: 0;
 }
 
+::selection {
+  background-color: #33bc9c;
+  color: gold;
+}
+
 nav {
   position: fixed;
   z-index: 1;
@@ -52,6 +57,11 @@ nav #login {
 
 #title {
   position: relative;
+}
+
+#title img {
+  pointer-events: none;
+  user-select: none;
 }
 
 #title div {
