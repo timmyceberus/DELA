@@ -64,24 +64,29 @@ nav #login {
   user-select: none;
 }
 
+#title {
+  min-height: 100vh;
+}
+
 #title div {
-  position: absolute;
-  top: 15vw;
-  left: 20vw;
+  position: relative;
+  top: 20em;
+  /* left: -30em; */
 }
 
 #title h1 {
   text-align: center;
-  font-size: 10vw;
+  font-size: 10em;
   animation-delay: 0.2s;
 }
 
 #title h6 {
   text-align: center;
-  font-size: 1.3vw;
-  animation-delay: 0.7s;
+  font-size: 1.3em;
 }
 
-/* @media screen and (max-width:600px){
-  image {width: 100%;}
-} */
+@media screen and (max-width:600px){
+  #title h1 {
+    font-size: 5em;
+  }
+}
