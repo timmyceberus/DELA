@@ -49,13 +49,13 @@ nav li a:hover {
 
 nav #login {
   position: absolute;
-  right: 0px;
+  right: 0;
   margin: 12px 20px;
 }
 
 nav #nav-menu {
   position: absolute;
-  left: 0px;
+  left: 0;
   margin: 12px 20px;
 }
 
