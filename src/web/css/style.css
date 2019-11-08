@@ -55,15 +55,12 @@ nav #login {
 
 #title {
   position: relative;
+  min-height: 100vh;
 }
 
 #title img {
   pointer-events: none;
   user-select: none;
-}
-
-#title {
-  min-height: 100vh;
 }
 
 #title div {
@@ -81,9 +78,10 @@ nav #login {
 #title h6 {
   text-align: center;
   font-size: 1.3em;
+  animation-delay: 1s;
 }
 
-@media screen and (max-width:600px){
+@media screen and (max-width: 600px) {
   #title div {
     left: 0;
   }
