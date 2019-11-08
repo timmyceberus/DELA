@@ -71,7 +71,7 @@ nav #login {
 #title div {
   position: relative;
   top: 20em;
-  /* left: -30em; */
+  left: -10vw;
 }
 
 #title h1 {
@@ -86,6 +86,10 @@ nav #login {
 }
 
 @media screen and (max-width:600px){
+  #title div {
+    left: 0;
+  }
+
   #title h1 {
     font-size: 5em;
   }
