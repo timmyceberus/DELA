@@ -26,6 +26,7 @@ nav ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
+  height: 60px;
 }
 
 nav li {
@@ -48,9 +49,14 @@ nav li a:hover {
 
 nav #login {
   position: absolute;
-  top: 10px;
-  right: 10px;
-  padding: auto;
+  right: 0px;
+  margin: 12px 20px;
+}
+
+nav #nav-menu {
+  position: absolute;
+  left: 0px;
+  margin: 12px 20px;
 }
 
 #title {
