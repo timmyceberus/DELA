@@ -10,16 +10,15 @@ body {
 nav {
   position: fixed;
   z-index: 1;
-  opacity: 0.8;
   width: 100%;
   top: 0;
   left: 0;
-  transition: opacity 0.2s;
+  transition: background-color 0.2s;
 }
 
 nav:hover {
-  opacity: 1;
-  transition: opacity 0.2s;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: background-color 0.2s;
 }
 
 nav ul {
@@ -42,7 +41,7 @@ nav li a {
 }
 
 nav li a:hover {
-  color: white;
+  color: rgb(194, 194, 194);
   text-decoration: none;
   opacity: 0.9;
 }
