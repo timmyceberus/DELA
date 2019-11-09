@@ -47,46 +47,6 @@ body {
   opacity: 0.9;
 }
 
-#vertical-nav {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  top: 55px;
-  left: 12px;
-  width: 150px;
-  border-radius: 5px;
-  background-color: rgba(0, 0, 0, 0.6);
-  transition: background-color 0.2s;
-}
-
-#vertical-nav ul {
-  padding: 0;
-  margin: 0;
-}
-
-#vertical-nav li {
-  list-style-type: none;
-  transition: background-color 0.2s;
-}
-
-#vertical-nav li:hover {
-  background-color: rgba(0, 0, 0, 0.1);
-  transition: background-color 0.2s;
-}
-
-#vertical-nav a {
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  padding: 5px 10px;
-  display: block;
-}
-
-#vertical-nav a:hover {
-  color: rgb(194, 194, 194);
-  opacity: 0.9;
-}
-
 nav .show-nav-btn-item {
   display: none;
 }
@@ -129,26 +89,4 @@ nav #login {
   text-align: center;
   font-size: 1.3em;
   animation-delay: 1s;
-}
-
-@media screen and (max-width: 700px) {
-  #title div {
-    left: 0;
-  }
-
-  #title h1 {
-    font-size: 5em;
-  }
-
-  #horizontal-nav:hover {
-    background-color: transparent;
-  }
-
-  #horizontal-nav .nav-item {
-    display: none;
-  }
-
-  #horizontal-nav .show-nav-btn-item {
-    display: list-item;
-  }
 }
