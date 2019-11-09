@@ -7,7 +7,7 @@ body {
   color: gold;
 }
 
-nav {
+nav#horizontal {
   position: fixed;
   z-index: 1;
   width: 100%;
@@ -16,12 +16,12 @@ nav {
   transition: background-color 0.2s;
 }
 
-nav:hover {
+nav#horizontal:hover {
   background-color: rgba(0, 0, 0, 0.6);
   transition: background-color 0.2s;
 }
 
-nav ul {
+nav#horizontal ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -29,11 +29,11 @@ nav ul {
   height: 60px;
 }
 
-nav li {
+nav#horizontal li {
   float: left; /* Horizontal Navigation */
 }
 
-nav li a {
+nav#horizontal a {
   display: block;
   color: white;
   text-align: center;
@@ -41,10 +41,31 @@ nav li a {
   text-decoration: none;
 }
 
-nav li a:hover {
+nav#horizontal a:hover {
   color: rgb(194, 194, 194);
   text-decoration: none;
   opacity: 0.9;
+}
+
+nav#vertical {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 40px;
+  left: 0;
+  width: 150px;
+  transition: background-color 0.2s;
+}
+
+nav#vertical li {
+  list-style-type: none;
+  margin: 15px auto;
+}
+
+nav#vertical a {
+  color: white;
+  text-align: center;
+  text-decoration: none;
 }
 
 nav #login {
@@ -53,7 +74,7 @@ nav #login {
   margin: 12px 20px;
 }
 
-nav #nav-menu {
+nav #show-nav-btn {
   position: absolute;
   left: 0;
   margin: 12px 20px;

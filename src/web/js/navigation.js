@@ -1,12 +1,17 @@
 $(window).resize(() => {
   const width = $(window).width();
-  const navList = $('nav ul');
+  const navList = $('nav#horizontal ul');
 
   if (width <= 700) {
     navList.find('li').not(':has(> button)').hide();
-    navList.find('li:has(> button#nav-menu)').show();
+    navList.find('li:has(> button#show-nav-btn)').show();
   } else {
     navList.find('li').not(':has(> button)').show();
-    navList.find('li:has(> button#nav-menu)').hide();
+    navList.find('li:has(> button#show-nav-btn)').hide();
+    $('nav#vertical').hide();
   }
 });
+
+$('#show-nav-btn').on('click', () => {
+  $('nav#vertical').toggle();
+})
