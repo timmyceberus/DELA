@@ -1,13 +1,12 @@
-$(window).resize(function () {
+$(window).resize(() => {
   const width = $(window).width();
   const navList = $('nav ul');
 
   if (width <= 700) {
     navList.find('li').not(':has(> button)').hide();
     navList.find('li:has(> button#nav-menu)').show();
-  }
-  else {
+  } else {
     navList.find('li').not(':has(> button)').show();
     navList.find('li:has(> button#nav-menu)').hide();
   }
-})
+});
