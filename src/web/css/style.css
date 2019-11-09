@@ -7,7 +7,7 @@ body {
   color: gold;
 }
 
-nav#horizontal {
+#horizontal-nav {
   position: fixed;
   z-index: 1;
   width: 100%;
@@ -16,12 +16,12 @@ nav#horizontal {
   transition: background-color 0.2s;
 }
 
-nav#horizontal:hover {
+#horizontal-nav:hover {
   background-color: rgba(0, 0, 0, 0.6);
   transition: background-color 0.2s;
 }
 
-nav#horizontal ul {
+#horizontal-nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -29,11 +29,11 @@ nav#horizontal ul {
   height: 60px;
 }
 
-nav#horizontal li {
-  float: left; /* Horizontal Navigation */
+#horizontal-nav li {
+  float: left;
 }
 
-nav#horizontal a {
+#horizontal-nav a {
   display: block;
   color: white;
   text-align: center;
@@ -41,42 +41,54 @@ nav#horizontal a {
   text-decoration: none;
 }
 
-nav#horizontal a:hover {
+#horizontal-nav a:hover {
   color: rgb(194, 194, 194);
   text-decoration: none;
   opacity: 0.9;
 }
 
-nav#vertical {
+#vertical-nav {
   display: none;
   position: fixed;
   z-index: 1;
   top: 40px;
   left: 0;
   width: 150px;
+  background-color: rgba(0, 0, 0, 0.6);
   transition: background-color 0.2s;
 }
 
-nav#vertical li {
-  list-style-type: none;
-  margin: 15px auto;
+#vertical-nav ul {
+  padding: 0;
+  margin: 0;
 }
 
-nav#vertical a {
+#vertical-nav li {
+  list-style-type: none;
+  
+}
+
+#vertical-nav a {
   color: white;
   text-align: center;
   text-decoration: none;
+  padding: 5px 10px;
+  display: block;
 }
 
-nav #login {
-  position: absolute;
-  right: 0;
-  margin: 12px 20px;
+nav .show-nav-btn-item {
+  display: none;
 }
 
 nav #show-nav-btn {
   position: absolute;
   left: 0;
+  margin: 12px 20px;
+}
+
+nav #login {
+  position: absolute;
+  right: 0;
   margin: 12px 20px;
 }
 
@@ -115,5 +127,13 @@ nav #show-nav-btn {
 
   #title h1 {
     font-size: 5em;
+  }
+
+  #horizontal-nav .nav-item {
+    display: none;
+  }
+
+  #horizontal-nav .show-nav-btn-item {
+    display: list-item;
   }
 }
