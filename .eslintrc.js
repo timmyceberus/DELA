@@ -3,8 +3,7 @@ module.exports = {
         "browser": true,
         "commonjs": true,
         "es6": true,
-        "node": true,
-        "jquery": true
+        "node": true
     },
     "extends": "airbnb", //使用airbnb規則
     "parserOptions": {
