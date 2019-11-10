@@ -16,10 +16,21 @@ body {
   width: 100%;
   top: 0;
   left: 0;
+  background-color: transparent;
+  transition: background-color 0.2s;
+}
+
+#horizontal-nav.colored {
+  background-color: rgba(0, 0, 0, 0.6);
   transition: background-color 0.2s;
 }
 
 #horizontal-nav:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: background-color 0.2s;
+}
+
+#horizontal-nav.colored:hover {
   background-color: rgba(0, 0, 0, 0.6);
   transition: background-color 0.2s;
 }

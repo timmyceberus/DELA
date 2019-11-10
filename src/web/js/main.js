@@ -5,6 +5,7 @@ $('#show-nav-btn').on('click blur', () => {
 
 $('.nav-item').on('click', function scroll() {
   const value = $(this).text();
+
   switch (value) {
     case 'DELA':
       window.scrollBy({
@@ -16,19 +17,27 @@ $('.nav-item').on('click', function scroll() {
     case '傳說故事':
       window.scrollBy({
         left: 0,
-        top: $('#langedary').offset().top - $(window).scrollTop(),
+        top: $('#langedary').offset().top - $(window).scrollTop() - 60,
         behavior: 'smooth',
       });
       break;
     case '文創商品':
       window.scrollBy({
         left: 0,
-        top: $('#goods').offset().top - $(window).scrollTop(),
+        top: $('#goods').offset().top - $(window).scrollTop() - 60,
         behavior: 'smooth',
       });
       break;
     default:
       // pass
+  }
+});
+
+$(window).on('scroll', () => {
+  if ($(window).scrollTop() > $('#title').height() - 100) {
+    $('#horizontal-nav').addClass('colored');
+  } else {
+    $('#horizontal-nav').removeClass('colored');
   }
 });
 
