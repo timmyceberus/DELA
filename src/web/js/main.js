@@ -6,16 +6,29 @@ $('#show-nav-btn').on('click blur', () => {
 $('.nav-item').on('click', function scroll() {
   const value = $(this).text();
   switch (value) {
+    case 'DELA':
+      window.scrollBy({
+        left: 0,
+        top: $('#title').offset().top - $(window).scrollTop(),
+        behavior: 'smooth',
+      });
+      break;
     case '傳說故事':
       window.scrollBy({
         left: 0,
-        top: $('#langedary').offset().top,
+        top: $('#langedary').offset().top - $(window).scrollTop(),
         behavior: 'smooth',
       });
-
+      break;
+    case '文創商品':
+      window.scrollBy({
+        left: 0,
+        top: $('#goods').offset().top - $(window).scrollTop(),
+        behavior: 'smooth',
+      });
       break;
     default:
-      // do nothing
+      // pass
   }
 });
 
