@@ -91,3 +91,15 @@ nav #login {
   font-size: 1.3em;
   animation-delay: 1s;
 }
+
+#langedary {
+  vertical-align: middle;
+  margin-left:200px;
+  margin-right:200px;
+}
+#langedary h1{
+  text-align: center;
+}
+#langedary li{
+  text-align: left;
+}
