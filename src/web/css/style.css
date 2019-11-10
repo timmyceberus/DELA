@@ -65,7 +65,7 @@ nav #login {
 
 #title {
   position: relative;
-  min-height: 100vh;
+  min-height: 800px;
   display: flex;
   justify-content: center;
   align-items: center;
