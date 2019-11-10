@@ -66,18 +66,14 @@ nav #login {
 #title {
   position: relative;
   min-height: 100vh;
-}
-
-#title img {
-  pointer-events: none;
-  user-select: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #title div {
   position: relative;
-  width: 100%;
-  margin: auto;
-  top: 20em;
+  display: inline-block;
 }
 
 #title h1 {

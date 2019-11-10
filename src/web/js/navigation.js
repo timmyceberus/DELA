@@ -6,8 +6,8 @@ const mousePos = { x: -1, y: -1 };
 const relativePos = { x: -1, y: -1 };
 const titleobject = $('#title div');
 const titlePos = {
-  x: titleobject.offset().left,
-  y: titleobject.offset().top,
+  x: titleobject.offset().left + titleobject.width() / 2,
+  y: titleobject.offset().top + titleobject.height() / 2,
 };
 
 
@@ -20,11 +20,11 @@ $(document).on('mousemove', (event) => {
 
   titleobject.css({
     left: `${(relativePos.x * 0.02) / 16}vw`,
-    top: `${(titlePos.y + relativePos.y * 0.02) / 16}em`,
+    top: `${(relativePos.y * 0.02)}px`,
   });
 });
 
 $(window).resize(() => {
-  titlePos.x = titleobject.offset().left;
-  titlePos.y = titleobject.offset().top;
+  titlePos.x = titleobject.offset().left + titleobject.width() / 2;
+  titlePos.y = titleobject.offset().top + titleobject.height() / 2;
 });
