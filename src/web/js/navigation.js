@@ -4,10 +4,10 @@ $('#show-nav-btn').on('click blur', () => {
 
 const mousePos = { x: -1, y: -1 };
 const relativePos = { x: -1, y: -1 };
-const titleObject = $('#title div');
+const titleobject = $('#title div');
 const titlePos = {
-  x: titleObject.offset().left + titleObject.width() / 2,
-  y: titleObject.offset().top + titleObject.height() / 2,
+  x: titleobject.offset().left + titleobject.width() / 2,
+  y: titleobject.offset().top + titleobject.height() / 2,
 };
 
 
@@ -18,9 +18,9 @@ $(document).on('mousemove', (event) => {
   relativePos.x = titlePos.x - mousePos.x;
   relativePos.y = titlePos.y - mousePos.y;
 
-  titleObject.css({
-    left: `${titlePos.x + relativePos.x * 0.02 - titleObject.width() / 2}px`,
-    top: `${titlePos.y + relativePos.y * 0.02 - titleObject.height() / 2}px`,
+  titleobject.css({
+    left: `${titlePos.x + relativePos.x * 0.02 - titleobject.width() / 2}px`,
+    top: `${titlePos.y + relativePos.y * 0.02 - titleobject.height() / 2}px`,
   });
   // console.log(mouse, title, relative);
 });
