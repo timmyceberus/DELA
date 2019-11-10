@@ -25,15 +25,15 @@
   transition: background-color 0.2s;
 }
 
-#vertical-nav a {
+#vertical-nav div {
   color: white;
   text-align: center;
-  text-decoration: none;
   padding: 5px 10px;
   display: block;
+  cursor: pointer;
 }
 
-#vertical-nav a:hover {
+#vertical-nav div:hover {
   color: rgb(194, 194, 194);
   opacity: 0.9;
 }

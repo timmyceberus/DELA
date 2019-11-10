@@ -36,17 +36,16 @@ body {
   float: left;
 }
 
-#horizontal-nav a {
+#horizontal-nav div {
   display: block;
   color: white;
   text-align: center;
   padding: 18px 20px;
-  text-decoration: none;
+  cursor: pointer;
 }
 
-#horizontal-nav a:hover {
+#horizontal-nav div:hover {
   color: rgb(194, 194, 194);
-  text-decoration: none;
   opacity: 0.9;
 }
 
