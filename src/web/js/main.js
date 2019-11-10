@@ -3,6 +3,21 @@ $('#show-nav-btn').on('click blur', () => {
   $('#vertical-nav').toggle();
 });
 
+$('.nav-item').on('click', function scroll() {
+  const value = $(this).text();
+  switch (value) {
+    case '傳說故事':
+      window.scrollBy({
+        left: 0,
+        top: $('#langedary').offset().top,
+        behavior: 'smooth',
+      });
+
+      break;
+    default:
+      // do nothing
+  }
+});
 
 // TITLE
 const mousePos = { x: -1, y: -1 };
