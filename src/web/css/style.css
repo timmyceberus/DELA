@@ -113,3 +113,8 @@ nav #login {
 #goods h1 {
   text-align: center;
 }
+
+#goods div {
+  text-align: center;
+  background-color: chocolate;
+}
