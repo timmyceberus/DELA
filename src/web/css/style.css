@@ -75,8 +75,9 @@ nav #login {
 
 #title div {
   position: relative;
+  width: 100%;
+  margin: auto;
   top: 20em;
-  left: -10vw;
 }
 
 #title h1 {
