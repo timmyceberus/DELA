@@ -33,9 +33,9 @@ $('.nav-item').on('click', function scroll() {
   }
 
   if ($('#vertical-nav').is(':visible')) {
-    $('#vertical-nav').toggle();
+    $('#vertical-nav').toggle()
   }
-});
+})
 
 $(window).on('scroll', () => {
   if ($(window).scrollTop() > $('#title').height() - 100) {
@@ -75,6 +75,4 @@ $(window).resize(() => {
 $(window).on('click', (event) => {
   event.preventDefault();
   event.stopPropagation();
-  console.log(event.target);
-  
 });
