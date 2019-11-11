@@ -122,3 +122,28 @@ body {
 table {
   margin: auto;
 }
+
+#music {
+  margin-left: 17em;
+  margin-right: 17em;
+}
+
+#music h1 {
+  text-align: center;
+}
+
+#music div.Album {
+  text-align: center;
+  font-size:30px;
+  color: black;
+}
+#music div.singer {
+  text-align: center;
+  font-size:30px;
+  color: rgb(138, 68, 36);
+}
+#music div.studio {
+  text-align: center;
+  font-size:30px;
+  color: rgb(3, 80, 42);
+}
