@@ -64,13 +64,13 @@ nav .show-nav-btn-item {
   display: none;
 }
 
-nav #show-nav-btn {
+#show-nav-btn {
   position: absolute;
   left: 0;
   margin: 12px 20px;
 }
 
-nav #login {
+#login-btn {
   position: absolute;
   right: 0;
   margin: 12px 20px;

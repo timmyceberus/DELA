@@ -1,5 +1,5 @@
 // NAVIGATION
-$('#show-nav-btn').on('click blur', () => {
+$('#show-nav-btn').on('click', () => {
   $('#vertical-nav').toggle();
 });
 
@@ -30,6 +30,10 @@ $('.nav-item').on('click', function scroll() {
       break;
     default:
       // pass
+  }
+
+  if ($('#vertical-nav').is(':visible')) {
+    $('#vertical-nav').toggle();
   }
 });
 
@@ -66,4 +70,11 @@ $(document).on('mousemove', (event) => {
 $(window).resize(() => {
   titlePos.x = titleobject.offset().left + titleobject.width() / 2;
   titlePos.y = titleobject.offset().top + titleobject.height() / 2;
+});
+
+$(window).on('click', (event) => {
+  event.preventDefault();
+  event.stopPropagation();
+  console.log(event.target);
+  
 });
