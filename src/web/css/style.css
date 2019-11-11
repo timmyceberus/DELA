@@ -101,11 +101,6 @@ nav #login {
   animation-delay: 1s;
 }
 
-#langedary {
-  margin-left: 15em;
-  margin-right: 15em;
-}
-
 #langedary h1 {
   text-align: center;
 }
@@ -115,11 +110,6 @@ nav #login {
   text-align: left;
 }
 
-#goods {
-  margin-left: 17em;
-  margin-right: 17em;
-}
-
 #goods h1 {
   text-align: center;
 }
@@ -127,4 +117,8 @@ nav #login {
 #goods div {
   text-align: center;
   background-color: chocolate;
+}
+
+table {
+  margin: auto;
 }
