@@ -1,6 +1,20 @@
 body {
-  background-color: wheat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: rgb(32, 32, 32);
+  text-align: center;
+  margin: 200px;
 }
+
+#login-box {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+input {
+  background: none;
+  border: none;
+  outline: none;
+}
+
