@@ -92,7 +92,7 @@ body {
 #title h1 {
   text-align: center;
   font-size: 10em;
-  animation-delay: .2s;
+  animation-delay: 0.2s;
 }
 
 #title h6 {
@@ -134,16 +134,18 @@ table {
 
 #music div.Album {
   text-align: center;
-  font-size:30px;
+  font-size: 30px;
   color: black;
 }
+
 #music div.singer {
   text-align: center;
-  font-size:30px;
+  font-size: 30px;
   color: rgb(138, 68, 36);
 }
+
 #music div.studio {
   text-align: center;
-  font-size:30px;
+  font-size: 30px;
   color: rgb(3, 80, 42);
 }

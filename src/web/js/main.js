@@ -29,13 +29,13 @@ $('.nav-item').on('click', function scroll() {
       });
       break;
     default:
-      // pass
+    // pass
   }
 
   if ($('#vertical-nav').is(':visible')) {
-    $('#vertical-nav').toggle()
+    $('#vertical-nav').toggle();
   }
-})
+});
 
 $(window).on('scroll', () => {
   if ($(window).scrollTop() > $('#title').height() - 100) {
