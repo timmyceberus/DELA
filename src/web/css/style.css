@@ -60,7 +60,7 @@ body {
   opacity: 0.9;
 }
 
-nav .show-nav-btn-item {
+#horizontal-nav .show-nav-btn-item {
   display: none;
 }
 
@@ -78,7 +78,7 @@ nav .show-nav-btn-item {
 
 #title {
   position: relative;
-  min-height: 800px;
+  min-height: 1000px;
   display: flex;
   justify-content: center;
   align-items: center;
