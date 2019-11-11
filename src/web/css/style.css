@@ -92,7 +92,7 @@ nav #login {
 #title h1 {
   text-align: center;
   font-size: 10em;
-  animation-delay: 0.2s;
+  animation-delay: .2s;
 }
 
 #title h6 {
