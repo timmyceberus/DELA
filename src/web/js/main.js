@@ -28,8 +28,15 @@ $('.nav-item').on('click', function scroll() {
         behavior: 'smooth',
       });
       break;
+    case '優美音樂':
+      window.scrollBy({
+        left: 0,
+        top: $('#music').offset().top - $(window).scrollTop() - 60,
+        behavior: 'smooth',
+      });
+      break;
     default:
-    // pass
+      // pass
   }
 
   if ($('#vertical-nav').is(':visible')) {
@@ -37,13 +44,21 @@ $('.nav-item').on('click', function scroll() {
   }
 });
 
-$(window).on('scroll', () => {
+function changeNavBGColor() {
   if ($(window).scrollTop() > $('#title').height() - 100) {
     $('#horizontal-nav').addClass('colored');
   } else {
     $('#horizontal-nav').removeClass('colored');
   }
+}
+
+$(window).on('scroll', () => {
+  changeNavBGColor();
 });
+
+if ($(window).scrollTop() > $('#title').height() - 100) {
+  changeNavBGColor();
+}
 
 // TITLE
 const mousePos = { x: -1, y: -1 };
