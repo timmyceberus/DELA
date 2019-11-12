@@ -4,7 +4,7 @@ $('#show-nav-btn').on('click', () => {
 });
 
 $('.nav-item').on('click', function scroll() {
-  const value = $(this).text();
+  const value = $(this).find('div').text();
 
   switch (value) {
     case 'DELA':
