@@ -154,3 +154,11 @@ table {
   max-height: 400px;
   object-fit: cover;
 }
+
+#legend h1 {
+  text-align: center;
+}
+
+#new {
+  
+}

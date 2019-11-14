@@ -86,8 +86,3 @@ $(window).resize(() => {
   titlePos.x = titleobject.offset().left + titleobject.width() / 2;
   titlePos.y = titleobject.offset().top + titleobject.height() / 2;
 });
-
-$(window).on('click', (event) => {
-  event.preventDefault();
-  event.stopPropagation();
-});

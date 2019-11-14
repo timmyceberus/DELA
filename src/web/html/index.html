@@ -22,7 +22,7 @@
 
     <style>
         .carousel-inner img {
-            width: 50%;
+            width: 100%;
             height: 50%;
         }
 
@@ -41,6 +41,9 @@
         <ul>
             <li class="nav-item">
                 <div>DELA</div>
+            </li>
+            <li class="nav-item">
+                <div>新聞</div>
             </li>
             <li class="nav-item">
                 <div>傳說故事</div>
@@ -64,6 +67,9 @@
     </nav>
     <nav id="vertical-nav">
         <ul>
+            <li class="nav-item">
+                <div>新聞</div>
+            </li>
             <li class="nav-item">
                 <div>傳說故事</div>
             </li>
@@ -91,58 +97,71 @@
     </div>
 
     <!-- News -->
-    <div id="news" class="container">
+    <div id="news" class="container" >
+        
         <br>
         <h1>原住民新聞</h1>
         <br>
-        <div id="demo" class="carousel slide" data-ride="carousel">
-            <ul class="carousel-indicators">
-                <li data-target="#demo" data-slide-to="0" class="active"></li>
-                <li data-target="#demo" data-slide-to="1"></li>
-                <li data-target="#demo" data-slide-to="2"></li>
-            </ul>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <a href="https://cssfx.dev"><img src="../img/news_1.jpg" height="1000"></a>
-                </div>
-                <div class="carousel-item">
-                    <a href=""><img src="../img/news_3.jpg" height="1000"></a>
-                </div>
-                <div class="carousel-item">
-                    <a href=""><img src="../img/news_3.jpg" height="1000"></a>
-                </div>
-            </div>
+        <table style="margin: auto">
+        <tr>
+            <td>
+                <div id="demo" class="carousel slide" data-ride="carousel" style="width: 500px">
+                    <ul class="carousel-indicators">
+                        <li data-target="#demo" data-slide-to="0" class="active"></li>
+                        <li data-target="#demo" data-slide-to="1"></li>
+                        <li data-target="#demo" data-slide-to="2"></li>
+                    </ul>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a href=""><img src="../img/news_1.jpg" height="1000"></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href=""><img src="../img/news_3.jpg" height="1000"></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href=""><img src="../img/news_3.jpg" height="1000"></a>
+                        </div>
+                    </div>
 
-            <!-- Left and right controls -->
-            <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </a>
-            <a class="carousel-control-next" href="#demo" data-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </a>
-        </div>
-
-        <!-- <a href=""><img src="https://images.chinatimes.com/newsphoto/2019-05-16/900/20190516001534.jpg" -->
-        <!-- width="500"></a> -->
-
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#demo" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+            </td>
+            <td>
+                <ul>
+                    <li><a href="">解決高電費問題 民團贈伊達邵太陽能板</a></li>
+                    <li><a href="">台北國際旅展 4部落旅遊主題邀民體驗</a></li>
+                    <li><a href="">立法成立文化內容策進院 總統出席揭牌</a></li>
+                    <li><a href="">那瑪夏國中辦成年禮 2校生登山認識狩獵文化</a></li>
+                    <li><a href="">哥倫比亞原民領導人遭槍殺 軍方企圖管傳領</a></li>
+                    <li><a href="">原民刀工藝交流座談會 聚焦探討刀藝文化</a></li>
+                    <li><a href="">落實反賄選觀念 宣導團隊文健站推有獎徵答</a></li>
+                    <li><a href="">培養原民教師行政才能 新北市開辦培力課程</a></li>
+                </ul>
+            </td>
+        </tr>
+        </table>
     </div>
-    <table>
-        <td id="graph" style="position: relative; left: 100px;">
-            <ul>
-                <li><a href="">解決高電費問題 民團贈伊達邵太陽能板</a></li>
-                <li><a href="">台北國際旅展 4部落旅遊主題邀民體驗</a></li>
-                <li><a href="">立法成立文化內容策進院 總統出席揭牌</a></li>
-                <li><a href="">那瑪夏國中辦成年禮 2校生登山認識狩獵文化</a></li>
-                <li><a href="">哥倫比亞原民領導人遭槍殺 軍方企圖管傳領</a></li>
-                <li><a href="">原民刀工藝交流座談會 聚焦探討刀藝文化</a></li>
-                <li><a href="">落實反賄選觀念 宣導團隊文健站推有獎徵答</a></li>
-                <li><a href="">培養原民教師行政才能 新北市開辦培力課程</a></li>
-            </ul>
-        </td>
-    </table>
+
+    <div id="legend" class="container">
+        <h1>傳說故事</h1>
+        <table>
+            <tr>
+                <td>
+                    <div style="font-size: 20px;">泰雅族-占卜鳥希利刻</div>
+
+                </td>
+            </tr>
+        </table>
+    </div>
 
     <!-- Goods -->
-    <div id="goods">
+    <div id="goods" class="container">
         <br>
         <h1>文創商品</h1>
         <br>
