@@ -81,6 +81,7 @@ body {
   justify-content: center;
   align-items: center;
   background-position: center center;
+  animation-delay: 0.2s;
 }
 
 #title div {
@@ -91,13 +92,13 @@ body {
 #title h1 {
   text-align: center;
   font-size: 10em;
-  animation-delay: 0.2s;
+  animation-delay: 1.5s;
 }
 
 #title h6 {
   text-align: center;
   font-size: 1.3em;
-  animation-delay: 1s;
+  animation-delay: 2s;
 }
 
 #news h1 {
