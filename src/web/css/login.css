@@ -12,6 +12,27 @@ body {
   color: gold;
 }
 
+#back-box {
+  position: absolute;
+  top: 20px;
+  left: 40px;
+  transition: text-shadow 0.1s;
+}
+
+#back-box:hover {
+  text-shadow: black 0.1em 0.1em 0.2em;
+  transition: text-shadow 0.2s;
+}
+
+#back-box i {
+  font-size: 25px;
+}
+
+#back-box span {
+  font-size: 20px;
+  top: 50%;
+}
+
 #login-box {
   position: absolute;
   top: 50%;
@@ -28,12 +49,12 @@ h1 {
   color: rgb(230, 230, 230);
 }
 
-div {
+#login-box div {
   position: relative;
   margin-bottom: 20px;
 }
 
-i {
+#login-box i {
   color: rgb(200, 200, 200);
 }
 
@@ -119,7 +140,7 @@ button:focus {
   }
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width: 800px) {
   #login-box {
     padding: 30px 70px;
   }
