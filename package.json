@@ -6,7 +6,7 @@
   "scripts": {
     "test": "node_modules/.bin/mocha ./src/test/*.js --timeout 100000",
     "htmlhint": "htmlhint ./src/web/",
-    "stylelint": "stylelint ./src/web/",
+    "stylelint": "stylelint ./src/web/", 
     "eslint": "eslint --ext .html,.js ./src/web/"
   },
   "author": "",

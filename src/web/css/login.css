@@ -1,5 +1,4 @@
 body {
-  /* background-color: #26BFA3; */
   background-image: url('../img/Login.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -65,7 +64,7 @@ span.float {
   left: 24px;
   right: 0;
   height: 2px;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   transform-origin: bottom right;
   transform: scaleX(0);
   transition: transform 0.5s ease;
@@ -102,22 +101,26 @@ button:focus {
   0% {
     transform: scale(1, 1);
   }
+
   15% {
     transform: scale(0.9, 1.1);
   }
+
   30% {
     transform: scale(1.1, 0.9);
   }
+
   45% {
     transform: scale(0.95, 1.05);
   }
+
   60% {
     transform: scale(1, 1);
   }
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 800px) {
   #login-box {
-    padding: 30px 70px; 
+    padding: 30px 70px;
   }
 }
