@@ -17,6 +17,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
+  min-width: 350px;
   padding: 30px 100px;
   background-color: rgba(71, 71, 71, 0.5);
   border-radius: 15px;
@@ -42,6 +43,7 @@ input {
   border: none;
   outline: none;
   margin-left: 5px;
+  color: rgb(200, 200, 200);
 }
 
 input::placeholder {
@@ -114,8 +116,8 @@ button:focus {
   }
 }
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 800px){
   #login-box {
-    padding: 5px;
+    padding: 30px 70px; 
   }
 }
