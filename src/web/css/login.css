@@ -80,28 +80,37 @@ button {
   font-family: inherit;
   color: white;
   padding: 0.5em 1em;
-  outline: none;
+  /* outline: none; */
   border: none;
-  background-color: hsl(236, 32%, 26%);
+  border-radius: 5px;
+  background-color: hsla(0, 0%, 68%, 0.5);
 }
 
 button:hover {
   cursor: pointer;
-  animation: jelly 0.5s;
+  animation: jelly 1s;
+  animation-iteration-count: infinite;
+}
+
+button:focus {
+  background-color: hsla(0, 0%, 68%, 0.3);
+  outline: none;
 }
 
 @keyframes jelly {
-  0%,
-  100% {
+  0% {
     transform: scale(1, 1);
   }
-  25% {
+  15% {
     transform: scale(0.9, 1.1);
   }
-  50% {
+  30% {
     transform: scale(1.1, 0.9);
   }
-  75% {
+  45% {
     transform: scale(0.95, 1.05);
+  }
+  60% {
+    transform: scale(1, 1);
   }
 }
