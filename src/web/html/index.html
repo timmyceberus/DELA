@@ -13,7 +13,26 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/narrow.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
     <title>DELA</title>
+
+    <style>
+        .carousel-inner img {
+            width: 50%;
+            height: 50%;
+        }
+
+        .item img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            min-height: 300px;
+        }
+    </style>
 </head>
 
 <body>
@@ -52,7 +71,7 @@
                 <div>文創商品</div>
             </li>
             <li class="nav-item">
-                <div>優美音樂   </div>
+                <div>優美音樂 </div>
             </li>
             <li class="nav-item">
                 <div>購物車</div>
@@ -71,30 +90,56 @@
         </div>
     </div>
 
-    <!-- Lengendary -->
-    <div id="langedary">
+    <!-- News -->
+    <div id="news" class="container">
         <br>
-        <h1>傳說文化</h1>
+        <h1>原住民新聞</h1>
         <br>
-        <table>
-            <td id="graph">
-                <a href=""><img src="https://images.chinatimes.com/newsphoto/2019-05-16/900/20190516001534.jpg"
-                        width="500"></a>
-            </td>
-            <td>
-                <ul>
-                    <li><a href="">解決高電費問題 民團贈伊達邵太陽能板</a></li>
-                    <li><a href="">台北國際旅展 4部落旅遊主題邀民體驗</a></li>
-                    <li><a href="">立法成立文化內容策進院 總統出席揭牌</a></li>
-                    <li><a href="">那瑪夏國中辦成年禮 2校生登山認識狩獵文化</a></li>
-                    <li><a href="">哥倫比亞原民領導人遭槍殺 軍方企圖管傳領</a></li>
-                    <li><a href="">原民刀工藝交流座談會 聚焦探討刀藝文化</a></li>
-                    <li><a href="">落實反賄選觀念 宣導團隊文健站推有獎徵答</a></li>
-                    <li><a href="">培養原民教師行政才能 新北市開辦培力課程</a></li>
-                </ul>
-            </td>
-        </table>
+        <div id="demo" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a href="https://cssfx.dev"><img src="../img/news_1.jpg" height="1000"></a>
+                </div>
+                <div class="carousel-item">
+                    <a href=""><img src="../img/news_3.jpg" height="1000"></a>
+                </div>
+                <div class="carousel-item">
+                    <a href=""><img src="../img/news_3.jpg" height="1000"></a>
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+
+        <!-- <a href=""><img src="https://images.chinatimes.com/newsphoto/2019-05-16/900/20190516001534.jpg" -->
+        <!-- width="500"></a> -->
+
     </div>
+    <table>
+        <td id="graph" style="position: relative; left: 100px;">
+            <ul>
+                <li><a href="">解決高電費問題 民團贈伊達邵太陽能板</a></li>
+                <li><a href="">台北國際旅展 4部落旅遊主題邀民體驗</a></li>
+                <li><a href="">立法成立文化內容策進院 總統出席揭牌</a></li>
+                <li><a href="">那瑪夏國中辦成年禮 2校生登山認識狩獵文化</a></li>
+                <li><a href="">哥倫比亞原民領導人遭槍殺 軍方企圖管傳領</a></li>
+                <li><a href="">原民刀工藝交流座談會 聚焦探討刀藝文化</a></li>
+                <li><a href="">落實反賄選觀念 宣導團隊文健站推有獎徵答</a></li>
+                <li><a href="">培養原民教師行政才能 新北市開辦培力課程</a></li>
+            </ul>
+        </td>
+    </table>
 
     <!-- Goods -->
     <div id="goods">

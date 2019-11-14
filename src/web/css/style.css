@@ -99,11 +99,11 @@ body {
   animation-delay: 1s;
 }
 
-#langedary h1 {
+#news h1 {
   text-align: center;
 }
 
-#langedary li {
+#news li {
   line-height: 2em;
   text-align: left;
 }
@@ -146,4 +146,10 @@ table {
   text-align: center;
   font-size: 30px;
   color: rgb(3, 80, 42);
+}
+
+.carousel .carousel-item img {
+  min-height: 300px;
+  max-height: 400px;
+  object-fit: cover;
 }
