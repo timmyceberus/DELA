@@ -77,16 +77,16 @@ body {
 #title {
   position: relative;
   min-height: 1000px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-position: center center;
   animation-delay: 0.2s;
 }
 
 #title div {
-  position: relative;
+  position: absolute;
   display: inline-block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #title h1 {

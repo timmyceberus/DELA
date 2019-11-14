@@ -64,8 +64,9 @@ if ($(window).scrollTop() > $('#title').height() - 100) {
 const mousePos = { x: -1, y: -1 };
 const relativePos = { x: -1, y: -1 };
 const titleobject = $('#title div');
+let sitewidth = $(window).width();
 const titlePos = {
-  x: titleobject.offset().left + titleobject.width() / 2,
+  x: sitewidth / 2,
   y: titleobject.offset().top + titleobject.height() / 2,
 };
 
@@ -77,12 +78,15 @@ $(document).on('mousemove', (event) => {
   relativePos.y = titlePos.y - mousePos.y;
 
   titleobject.css({
-    left: `${(relativePos.x * 0.02) / 16}vw`,
-    top: `${(relativePos.y * 0.02)}px`,
+    left: `${(titlePos.x + relativePos.x * 0.02) / sitewidth * 100}vw`,
+    top: `${(titlePos.y + relativePos.y * 0.02)}px`,
   });
+
+  console.log((relativePos.x));
 });
 
 $(window).resize(() => {
-  titlePos.x = titleobject.offset().left + titleobject.width() / 2;
+  sitewidth = $(window).width();
+  titlePos.x = sitewidth / 2;
   titlePos.y = titleobject.offset().top + titleobject.height() / 2;
 });
