@@ -8,6 +8,21 @@ table {
   margin: auto;
 }
 
+.head {
+  text-align: center;
+  padding-bottom: 20px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+.head span {
+  position: absolute;
+  left: -50px;
+  right: -50px;
+  height: 2px;
+}
+
 ::selection {
   background-color: #33bc9c;
   color: gold;
@@ -122,20 +137,11 @@ table {
 }
 
 #news .head {
-  text-align: center;
-  color: #f2a20c;
-  padding-bottom: 20px;
-  position: absolute;
   top: 15%;
-  left: 50%;
-  transform: translate(-50%, 0%);
+  color: #f2a20c;
 }
 
 #news .head span {
-  position: absolute;
-  left: -50px;
-  right: -50px;
-  height: 2px;
   background-color: #f2a20c;
 }
 
@@ -149,8 +155,21 @@ table {
 }
 
 /* LEGEND */
-#legend h1 {
-  text-align: center;
+#legend {
+  position: relative;
+}
+
+#legend .head {
+  top: 8%;
+  color: #33bc9c;
+}
+
+#legend .head span {
+  background-color: #33bc9c;
+}
+
+#legend .container {
+  padding: 20% 0 12% 0;
 }
 
 #legend tr {
