@@ -229,4 +229,11 @@ footer h1 {
 footer i {
   font-size: 30px;
   margin: auto 5px;
+  cursor: pointer;
+  transition: opacity 0.1s;
+}
+
+footer i:hover {
+  opacity: 0.3;
+  transition: opacity 0.2s;
 }
