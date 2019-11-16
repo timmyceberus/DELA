@@ -68,10 +68,11 @@ if ($(window).scrollTop() > $('#title').height() - 100) {
 }
 
 // TITLE
+let sitewidth = $(window).width();
 const mousePos = { x: -1, y: -1 };
 const relativePos = { x: -1, y: -1 };
+const bgobject = $('#title');
 const titleobject = $('#title div');
-let sitewidth = $(window).width();
 const titlePos = {
   x: sitewidth / 2,
   y: titleobject.offset().top + titleobject.height() / 2,
@@ -89,7 +90,7 @@ $(document).on('mousemove', (event) => {
     top: `${(titlePos.y + relativePos.y * 0.03)}px`,
   });
 
-  $('#title').css('background-position', `${relativePos.x * 0.01 - 50}px ${relativePos.y * 0.01 - 50}px`);
+  bgobject.css('background-position', `${50 + relativePos.x * 0.001}% ${50 + relativePos.y * 0.01}%`);
 });
 
 $(window).resize(() => {
