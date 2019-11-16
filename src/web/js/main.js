@@ -85,11 +85,11 @@ $(document).on('mousemove', (event) => {
   relativePos.y = titlePos.y - mousePos.y;
 
   titleobject.css({
-    left: `${((titlePos.x + relativePos.x * 0.02) / sitewidth) * 100}vw`,
-    top: `${(titlePos.y + relativePos.y * 0.02)}px`,
+    left: `${((titlePos.x + relativePos.x * 0.03) / sitewidth) * 100}vw`,
+    top: `${(titlePos.y + relativePos.y * 0.03)}px`,
   });
 
-  $('#title').css('background-position', `${relativePos.x * 0.01 - 50}px ${relativePos.y * 0.01}px`);
+  $('#title').css('background-position', `${relativePos.x * 0.01 - 50}px ${relativePos.y * 0.01 - 50}px`);
 });
 
 $(window).resize(() => {

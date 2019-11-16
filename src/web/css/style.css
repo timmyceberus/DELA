@@ -101,6 +101,7 @@ table {
   min-height: 1000px;
   background-position: center center;
   background-repeat: no-repeat;
+  background-size: 130%;
   animation-delay: 0.2s;
 }
 
