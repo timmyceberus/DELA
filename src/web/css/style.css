@@ -112,7 +112,7 @@ table {
 #news {
   background-color: #121315;
   height: 100%;
-  padding: 16% 0 18% 0;
+  padding: 24% 0 18% 0;
   position: relative;
 }
 
@@ -121,7 +121,7 @@ table {
   padding-bottom: 50px;
 }
 
-#news h1 {
+#news .head {
   text-align: center;
   color: #f2a20c;
   padding-bottom: 20px;
@@ -129,6 +129,14 @@ table {
   top: 15%;
   left: 50%;
   transform: translate(-50%, 0%);
+}
+
+#news .head span {
+  position: absolute;
+  left: -50px;
+  right: -50px;
+  height: 2px;
+  background-color: #f2a20c;
 }
 
 #news li {
