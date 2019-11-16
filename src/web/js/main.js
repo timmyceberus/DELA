@@ -88,6 +88,8 @@ $(document).on('mousemove', (event) => {
     left: `${((titlePos.x + relativePos.x * 0.02) / sitewidth) * 100}vw`,
     top: `${(titlePos.y + relativePos.y * 0.02)}px`,
   });
+
+  $('#title').css('background-position', `${relativePos.x * 0.01 - 50}px ${relativePos.y * 0.01}px`);
 });
 
 $(window).resize(() => {
