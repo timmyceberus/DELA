@@ -17,7 +17,7 @@ $('.nav-item').on('click', function scroll() {
     case '傳說故事':
       window.scrollBy({
         left: 0,
-        top: $('#langedary').offset().top - $(window).scrollTop() - 60,
+        top: $('#langen').offset().top - $(window).scrollTop() - 60,
         behavior: 'smooth',
       });
       break;

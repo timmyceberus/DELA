@@ -101,8 +101,13 @@ body {
   animation-delay: 2s;
 }
 
+#news {
+  background-color: #121315;
+}
+
 #news h1 {
   text-align: center;
+  color: #f2a20c;
 }
 
 #news li {
