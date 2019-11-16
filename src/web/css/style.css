@@ -111,6 +111,9 @@ table {
 /* NEWS */
 #news {
   background-color: #121315;
+  height: 100%;
+  padding: 16% 0 18% 0;
+  position: relative;
 }
 
 #news .container {
@@ -122,6 +125,10 @@ table {
   text-align: center;
   color: #f2a20c;
   padding-bottom: 20px;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, 0%);
 }
 
 #news li {
