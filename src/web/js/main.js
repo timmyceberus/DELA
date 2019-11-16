@@ -14,10 +14,17 @@ $('.nav-item').on('click', function scroll() {
         behavior: 'smooth',
       });
       break;
+    case '新聞':
+      window.scrollBy({
+        left: 0,
+        top: $('#news').offset().top - $(window).scrollTop() - 60,
+        behavior: 'smooth',
+      });
+      break;
     case '傳說故事':
       window.scrollBy({
         left: 0,
-        top: $('#langen').offset().top - $(window).scrollTop() - 60,
+        top: $('#legend').offset().top - $(window).scrollTop() - 60,
         behavior: 'smooth',
       });
       break;

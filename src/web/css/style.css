@@ -1,6 +1,11 @@
+/* GLOBAL */
 body {
   margin: 0;
   font-family: 'Noto Sans TC', sans-serif;
+}
+
+table {
+  margin: auto;
 }
 
 ::selection {
@@ -8,6 +13,7 @@ body {
   color: gold;
 }
 
+/* NAVIGATION */
 #horizontal-nav {
   position: fixed;
   z-index: 1;
@@ -74,6 +80,7 @@ body {
   margin: 12px 20px;
 }
 
+/* TITLE */
 #title {
   position: relative;
   min-height: 1000px;
@@ -101,13 +108,20 @@ body {
   animation-delay: 2s;
 }
 
+/* NEWS */
 #news {
   background-color: #121315;
+}
+
+#news .container {
+  padding-top: 30px;
+  padding-bottom: 50px;
 }
 
 #news h1 {
   text-align: center;
   color: #f2a20c;
+  padding-bottom: 20px;
 }
 
 #news li {
@@ -115,6 +129,20 @@ body {
   text-align: left;
 }
 
+#news a {
+  color: #f2a20c;
+}
+
+/* LEGEND */
+#legend h1 {
+  text-align: center;
+}
+
+#legend tr {
+  box-shadow: 3px 3px 12px #ffb326;
+}
+
+/* GOODS */
 #goods h1 {
   text-align: center;
 }
@@ -124,10 +152,7 @@ body {
   background-color: chocolate;
 }
 
-table {
-  margin: auto;
-}
-
+/* MUSIC */
 #music {
   margin-left: 17em;
   margin-right: 17em;
@@ -159,10 +184,6 @@ table {
   min-height: 300px;
   max-height: 400px;
   object-fit: cover;
-}
-
-#legend h1 {
-  text-align: center;
 }
 
 .carousel-inner img {
