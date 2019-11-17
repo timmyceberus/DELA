@@ -39,6 +39,11 @@
 }
 
 @media screen and (max-width: 700px) {
+  #title div {
+    top: 50%;
+    left: 50%;
+  }
+
   #title h1 {
     font-size: 5em;
   }
