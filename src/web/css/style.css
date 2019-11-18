@@ -179,41 +179,66 @@ table {
 }
 
 /* GOODS */
+#goods {
+  position: relative;
+}
+
+#goods .head {
+  top: 8%;
+  color: rgb(221, 107, 112);
+}
+
+#goods .head span {
+  background-color:rgb(221, 107, 112);
+}
+
+#goods .container {
+  padding: 20% 0 12% 0;
+}
+
 #goods h1 {
   text-align: center;
 }
 
-#goods div {
+#goods td {
   text-align: center;
   background-color: chocolate;
 }
 
 /* MUSIC */
 #music {
-  margin-left: 17em;
-  margin-right: 17em;
+  position: relative;
 }
 
-#music h1 {
-  text-align: center;
+#music .head {
+  top: 8%;
+  color: rgb(108, 106, 122);
+}
+
+#music .head span {
+  background-color:rgb(108, 106, 122);
+}
+
+#music .container {
+  padding: 20% 0 12% 0;
 }
 
 #music div.Album {
   text-align: center;
-  font-size: 30px;
-  color: black;
+  font-size: 20px;
+  color: rgb(236, 231, 218);
 }
 
 #music div.singer {
   text-align: center;
-  font-size: 30px;
-  color: rgb(138, 68, 36);
+  font-size: 20px;
+  color: rgb(236, 231, 218);
 }
 
 #music div.studio {
   text-align: center;
-  font-size: 30px;
-  color: rgb(3, 80, 42);
+  font-size: 20px;
+  color: rgb(236, 231, 218);
 }
 
 .carousel .carousel-item img {
