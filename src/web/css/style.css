@@ -207,38 +207,60 @@ table {
 
 /* MUSIC */
 #music {
+  background-color: #121315;
+  height: 100%;
+  padding: 24% 0 18% 0;
   position: relative;
 }
 
 #music .head {
   top: 8%;
-  color: rgb(108, 106, 122);
+  color: rgb(128, 211, 166);
 }
 
 #music .head span {
-  background-color:rgb(108, 106, 122);
+  background-color:rgb(128, 211, 166);
 }
 
-#music .container {
-  padding: 20% 0 12% 0;
-}
+
 
 #music div.Album {
   text-align: center;
   font-size: 20px;
-  color: rgb(236, 231, 218);
+  color: rgb(160, 204, 180);
 }
 
 #music div.singer {
   text-align: center;
   font-size: 20px;
-  color: rgb(236, 231, 218);
+  color: rgb(160, 204, 180);
 }
 
 #music div.studio {
   text-align: center;
   font-size: 20px;
-  color: rgb(236, 231, 218);
+  color: rgb(160, 204, 180);
+}
+
+/* About */
+#about {
+  background-color: #121315;
+  height: 100%;
+  padding: 24% 0 18% 0;
+  position: relative;
+}
+
+#about .head {
+  top: 8%;
+  color: rgb(181, 173, 233);
+}
+
+#about .head span {
+  background-color: rgb(181, 173, 233);
+}
+
+#about .container {
+  padding: 20% 0 12% 0;
 }
 
 .carousel .carousel-item img {
