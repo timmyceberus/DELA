@@ -191,9 +191,15 @@ table {
   padding: 20% 0 12% 0;
 }
 
-#legend tr {
-  box-shadow: 3px 3px 12px #ffb326;
+#legend #storys {
+  border-bottom: 5px white solid;
+  margin: 10px;
+  padding: 10px;
+  color: whitesmoke;
+  /* font-family:sans-serif; */
 }
+
+
 
 /* GOODS */
 #goods {
