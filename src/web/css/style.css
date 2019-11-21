@@ -6,12 +6,18 @@
   --legend-title: #f0f0f0;
   --goods-bg: #8bc0e8;
   --goods-title: #505afc;
+  --music-bg: #121315;
   --music-title: rgb(128, 211, 166);
+}
+
+html {
+  height: 100%;
 }
 
 body {
   margin: 0;
   font-family: 'Noto Sans TC', sans-serif;
+  height: 100%;
 }
 
 table {
@@ -219,7 +225,7 @@ table {
 
 /* MUSIC */
 #music {
-  background-color: #121315;
+  background-color: var(--music-bg);
   height: 100%;
   padding: 24% 0 18% 0;
   position: relative;
@@ -341,4 +347,16 @@ footer i {
 footer i:hover {
   opacity: 0.3;
   transition: opacity 0.2s;
+}
+
+/* Index Image */
+.index-img {
+  background-image:url('../img/index_1.jpg');
+  background-size: cover;
+  background-position: center center;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+  top: 0px;
 }
