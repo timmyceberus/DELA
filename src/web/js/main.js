@@ -61,8 +61,19 @@ function changeNavBGColor() {
 
 $(window).on('scroll', () => {
   changeNavBGColor();
+  if ($(window).scrollTop() < $('#legend').offset().top) {
+    $('.index-img').css('background-image', 'url(\'../img/index_1.jpg\')');
+  } else if ($(window).scrollTop() > $('#legend').offset().top) {
+    $('.index-img').css('background-image', 'url(\'../img/index_2.jpg\')');
+  }
 });
 
 if ($(window).scrollTop() > $('#title').height() - 100) {
   changeNavBGColor();
+}
+
+if ($(window).scrollTop() < $('#legend').offset().top) {
+  $('.index-img').css('background-image', 'url(\'../img/index_1.jpg\')');
+} else if ($(window).scrollTop() > $('#legend').offset().top) {
+  $('.index-img').css('background-image', 'url(\'../img/index_2.jpg\')');
 }

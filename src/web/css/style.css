@@ -174,6 +174,7 @@ table {
 
 /* LEGEND */
 #legend {
+  margin-top: 25em;
   position: relative;
   background-color: var(--legend-bg);
 }
@@ -203,6 +204,7 @@ table {
 
 /* GOODS */
 #goods {
+  margin-top: 25em;
   position: relative;
   background-color: var(--goods-bg);
 }
@@ -333,12 +335,12 @@ footer i:hover {
 
 /* Index Image */
 .index-img {
-  background-image:url('../img/index_1.jpg');
+  background-image: url('../img/index_1.jpg');
   background-size: cover;
   background-position: center center;
   height: 100%;
   width: 100%;
   position: fixed;
   z-index: -1;
-  top: 0px;
+  top: 0;
 }
