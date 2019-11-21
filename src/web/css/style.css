@@ -189,7 +189,7 @@ table {
 }
 
 #goods .head span {
-  background-color:rgb(221, 107, 112);
+  background-color: rgb(221, 107, 112);
 }
 
 #goods .container {
@@ -219,10 +219,8 @@ table {
 }
 
 #music .head span {
-  background-color:rgb(128, 211, 166);
+  background-color: rgb(128, 211, 166);
 }
-
-
 
 #music div.Album {
   text-align: center;
@@ -242,32 +240,32 @@ table {
   color: rgb(160, 204, 180);
 }
 
-button{ 
-  width: 40px; 
-  /* 寬 */ 
-  height: 40px; 
-  /* 高 */ 
-  background:rgb(168, 164, 164);
+#music button {
+  /* 寬 */
+  width: 40px;
+
+  /* 高 */
+  height: 40px;
+  background: rgb(168, 164, 164);
   border-radius: 50%;
- 
- } 
+}
 
-  button:hover{ 
-    /* 滑鼠懸在上時背景變色 */ 
-    background:white; 
-  }
-  #music i {
-    font-size: 20px;
-    margin: auto;
-    cursor: pointer;
-    transition: opacity 0.1s;
-  }
-  
-  #music i:hover {
-    opacity: 0.3;
-    transition: opacity 0.2s;
-  }
+#music button:hover {
+  /* 滑鼠懸在上時背景變色 */
+  background: white;
+}
 
+#music i {
+  font-size: 20px;
+  margin: auto;
+  cursor: pointer;
+  transition: opacity 0.1s;
+}
+
+#music i:hover {
+  opacity: 0.3;
+  transition: opacity 0.2s;
+}
 
 /* About */
 #about {
