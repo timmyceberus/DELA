@@ -114,14 +114,14 @@ table {
 /* TITLE */
 #title {
   position: relative;
-  min-height: 1000px;
+  min-height: 110%;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   animation-delay: 0.2s;
 }
 
-#title div {
+#title .title {
   position: absolute;
   display: inline-block;
   top: 40%;
@@ -139,6 +139,19 @@ table {
   text-align: center;
   font-size: 1.3em;
   animation-delay: 2s;
+}
+
+#title .icons {
+  position: absolute;
+  left: 3%;
+  top: 50%;
+  width: 3em;
+  /* text-align: center; */
+  /* animation-delay: 3s; */
+}
+
+#title .icons i {
+  font-size: 3em;
 }
 
 /* NEWS */
