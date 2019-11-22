@@ -42,6 +42,13 @@ $('.nav-item').on('click', function scroll() {
         behavior: 'smooth',
       });
       break;
+    case '關於我們':
+      window.scrollBy({
+        left: 0,
+        top: $('#about').offset().top - $(window).scrollTop() - 60,
+        behavior: 'smooth',
+      });
+      break;
     default:
       // pass
   }
@@ -72,7 +79,9 @@ if ($(window).scrollTop() > $('#title').height() - 100) {
   changeNavBGColor();
 }
 
-if ($(window).scrollTop() < $('#legend').offset().top) {
+if ($(window).scrollTop() < $('#news').offset().top) {
+  $('.index-img').css('background-image', 'none');
+} else if ($(window).scrollTop() < $('#legend').offset().top) {
   $('.index-img').css('background-image', 'url(\'../img/index_1.jpg\')');
 } else if ($(window).scrollTop() > $('#legend').offset().top) {
   $('.index-img').css('background-image', 'url(\'../img/index_2.jpg\')');
