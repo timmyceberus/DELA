@@ -141,17 +141,56 @@ table {
   animation-delay: 2s;
 }
 
-#title .icons {
+#title .icon-box {
   position: absolute;
   left: 3%;
-  top: 65%;
-  width: 3em;
-  /* animation-delay: 3s; */
+  top: 70%;
+  width: 300px;
+  animation-delay: 3s;
 }
 
-#title .icons i {
-  font-size: 3em;
-  margin-top: 10px;
+#title .icon-box div {
+  padding-top: 10px;
+  cursor: pointer;
+}
+
+#title .icon-box div i {
+  font-size: 35px;
+  transition: transform 0.5s;
+}
+
+#title .icon-box div.hover i {
+  transition: transform 0.5s;
+}
+
+#title .icon-box div.hover i.fa-facebook {
+  transform: translate(110px, 0);
+}
+
+#title .icon-box div.hover i.fa-instagram {
+  transform: translate(120px, 0);
+}
+
+#title .icon-box div.hover i.fa-line {
+  transform: translate(50px, 0);
+}
+
+#title .icon-box div.hover i.fa-twitter {
+  transform: translate(90px, 0);
+}
+
+#title .icon-box div span {
+  position: absolute;
+  user-select: none;
+  font-size: 20px;
+  margin-top: 3px;
+  left: 0;
+  opacity: 0;
+}
+
+#title .icon-box div.hover span {
+  opacity: 1;
+  transition: opacity 0.5s;
 }
 
 /* NEWS */
@@ -212,8 +251,6 @@ table {
   color: whitesmoke;
   /* font-family:sans-serif; */
 }
-
-
 
 /* GOODS */
 #goods {

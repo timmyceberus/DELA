@@ -58,6 +58,16 @@ $('.nav-item').on('click', function scroll() {
   }
 });
 
+// TITLE
+$('.icon-box div').on('mouseover', function iconsMouseover() {
+  $(this).addClass('hover');
+});
+
+$('.icon-box div').on('mouseout', function iconsMouseover() {
+  $(this).removeClass('hover');
+});
+
+// SCROLL
 function changeNavBGColor() {
   if ($(window).scrollTop() > $('#title').height() - 100) {
     $('#horizontal-nav').addClass('colored');
@@ -75,6 +85,7 @@ $(window).on('scroll', () => {
   }
 });
 
+// INITIALIZE
 if ($(window).scrollTop() > $('#title').height() - 100) {
   changeNavBGColor();
 }
