@@ -115,6 +115,7 @@ table {
 #title {
   position: relative;
   min-height: 105%;
+  background-image: url('../img/Taiwan.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -145,7 +146,7 @@ table {
   position: absolute;
   left: 3%;
   top: 70%;
-  width: 300px;
+  width: 160px;
   animation-delay: 3s;
 }
 
@@ -286,6 +287,7 @@ table {
   background-color: var(--music-bg);
   height: 100%;
   padding: 24% 0 18% 0;
+  margin-top: 25em;
   position: relative;
 }
 
@@ -342,6 +344,7 @@ table {
   background-color: #121315;
   height: 100%;
   padding: 24% 0 18% 0;
+  margin-top: 25em;
   position: relative;
 }
 
