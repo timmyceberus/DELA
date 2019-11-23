@@ -2,10 +2,12 @@
 :root {
   --news-bg: #121315;
   --news-title: #f2a20c;
-  --legend-bg: #ff8366;
+  --legend-bg1: #ff8366;
+  --legend-bg2: #f8854f;
   --legend-title: #f0f0f0;
-  --goods-bg: #8bc0e8;
-  --goods-title: #505afc;
+  --goods-bg1: #892fd9;
+  --goods-bg2: #402ccb;
+  --goods-title: #f0f0f0;
   --music-bg: #121315;
   --music-title: rgb(128, 211, 166);
 }
@@ -229,7 +231,7 @@ table {
 #legend {
   margin-top: 25em;
   position: relative;
-  background-color: var(--legend-bg);
+  background: linear-gradient(to right, var(--legend-bg1), var(--legend-bg2));
 }
 
 #legend .head {
@@ -250,14 +252,13 @@ table {
   margin: 10px;
   padding: 10px;
   color: whitesmoke;
-  /* font-family:sans-serif; */
 }
 
 /* GOODS */
 #goods {
   margin-top: 25em;
   position: relative;
-  background-color: var(--goods-bg);
+  background: linear-gradient(to bottom right, var(--goods-bg1), var(--goods-bg2));
 }
 
 #goods .head {
