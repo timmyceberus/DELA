@@ -247,7 +247,7 @@ table {
   padding: 20% 0 12% 0;
 }
 
-#legend #storys {
+#legend .storys {
   border-bottom: 5px white solid;
   margin: 10px;
   padding: 10px;
