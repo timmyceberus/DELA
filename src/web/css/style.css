@@ -204,14 +204,14 @@ table {
 }
 
 #news .container {
-  padding-top: 30px;
-  padding-bottom: 50px;
-}
+   padding-top: 30px; 
+   padding-bottom: 50px; 
+} 
 
 #news .head {
-  top: 15%;
+   top: 15%; 
   color: var(--news-title);
-}
+} 
 
 #news .head span {
   background-color: var(--news-title);
@@ -220,6 +220,10 @@ table {
 #news a {
   color: var(--news-title);
 }
+
+#new .carousel-inner {
+  height: 1000px;
+} 
 
 /* LEGEND */
 #legend {
