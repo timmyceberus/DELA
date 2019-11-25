@@ -5,8 +5,8 @@
   --legend-bg1: #ff8366;
   --legend-bg2: #f8854f;
   --legend-title: #f0f0f0;
-  --goods-bg1: #892fd9;
-  --goods-bg2: #402ccb;
+  --goods-bg1: #9850d6;
+  --goods-bg2: #6e5fcc;
   --goods-title: #f0f0f0;
   --music-bg: #121315;
   --music-title: rgb(128, 211, 166);
@@ -199,7 +199,6 @@ table {
 /* NEWS */
 #news {
   background-color: var(--news-bg);
-  height: 100%;
   padding: 24% 0 18% 0;
   position: relative;
 }
@@ -216,11 +215,6 @@ table {
 
 #news .head span {
   background-color: var(--news-title);
-}
-
-#news li {
-  line-height: 2em;
-  text-align: left;
 }
 
 #news a {
@@ -286,7 +280,6 @@ table {
 /* MUSIC */
 #music {
   background-color: var(--music-bg);
-  height: 100%;
   padding: 24% 0 18% 0;
   margin-top: 25em;
   position: relative;
@@ -343,7 +336,6 @@ table {
 /* About */
 #about {
   background-color: #121315;
-  height: 100%;
   padding: 24% 0 18% 0;
   margin-top: 25em;
   position: relative;
