@@ -118,7 +118,7 @@ table {
   position: relative;
   min-height: 105%;
   background-image: url('../img/Taiwan.jpg');
-  background-position: center center;
+  background-position: bottom 1% center;
   background-repeat: no-repeat;
   background-size: cover;
   animation-delay: 0.2s;
