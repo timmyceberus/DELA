@@ -229,7 +229,6 @@ table {
 #legend {
   margin-top: 25em;
   position: relative;
-  padding: 20% 0 12% 0;
   background: linear-gradient(to right, var(--legend-bg1), var(--legend-bg2));
 }
 
@@ -240,6 +239,10 @@ table {
 
 #legend .head span {
   background-color: var(--legend-title);
+}
+
+#legend .container {
+  padding: 22% 0 12% 0; /* 螢幕變窄後仍正常顯示 */
 }
 
 #legend .list-group-item.active {

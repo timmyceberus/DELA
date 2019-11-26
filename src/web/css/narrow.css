@@ -59,4 +59,8 @@
   #horizontal-nav .show-nav-btn-item {
     display: list-item;
   }
+
+  #legend .container {
+    padding: 35% 0 12% 0; /* 螢幕變窄後仍正常顯示 */
+  }
 }
