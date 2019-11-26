@@ -2,8 +2,8 @@
 :root {
   --news-bg: #121315;
   --news-title: #f2a20c;
-  --legend-bg1: #ff8366;
-  --legend-bg2: #f8854f;
+  --legend-bg1: #4b3b40;
+  --legend-bg2: #82735c;
   --legend-title: #f0f0f0;
   --goods-bg1: #9850d6;
   --goods-bg2: #6e5fcc;
@@ -204,14 +204,14 @@ table {
 }
 
 #news .container {
-   padding-top: 30px; 
-   padding-bottom: 50px; 
-} 
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
 
 #news .head {
-   top: 15%; 
+  top: 15%;
   color: var(--news-title);
-} 
+}
 
 #news .head span {
   background-color: var(--news-title);
@@ -223,12 +223,13 @@ table {
 
 #new .carousel-inner {
   height: 1000px;
-} 
+}
 
 /* LEGEND */
 #legend {
   margin-top: 25em;
   position: relative;
+  padding: 20% 0 12% 0;
   background: linear-gradient(to right, var(--legend-bg1), var(--legend-bg2));
 }
 
@@ -241,8 +242,47 @@ table {
   background-color: var(--legend-title);
 }
 
-#legend .container {
-  padding: 20% 0 12% 0;
+#legend .list-group-item.active {
+  background-color: white !important;
+  border-color: white;
+  color: black;
+}
+
+#legend .list-group-item {
+  color: white;
+}
+
+#legend #list-tayal-list {
+  background-color: #00c3e2;
+}
+
+#legend #list-bunun-list {
+  background-color: #1e416f;
+}
+
+#legend #list-cou-list {
+  background-color: #cf649a;
+}
+
+#legend #list-drekay-list {
+  background-color: #504dff;
+}
+
+#legend #list-payuan-list {
+  background-color: #33cc70;
+}
+
+#legend .tab-pane {
+  color: #dbdbdb;
+}
+
+#legend .tab-pane p::first-letter {
+  font-weight: bold;
+  font-size: 38px;
+  color: #33bc9c;
+  line-height: 26px;
+  float: left;
+  padding: 10px 5px 0 0;
 }
 
 #legend .storys {
