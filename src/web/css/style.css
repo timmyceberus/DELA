@@ -199,7 +199,7 @@ table {
 /* NEWS */
 #news {
   background-color: var(--news-bg);
-  padding: 24% 0 18% 0;
+  padding: 20% 0 15% 0;
   position: relative;
 }
 
@@ -221,8 +221,10 @@ table {
   color: var(--news-title);
 }
 
-#new .carousel-inner {
-  height: 1000px;
+#news img{
+  height: 40em; 
+  width: 60em; 
+  overflow: hidden;
 }
 
 /* LEGEND */
