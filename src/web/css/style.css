@@ -201,6 +201,7 @@ table {
   background-color: var(--news-bg);
   padding: 20% 0 15% 0;
   position: relative;
+  box-shadow: 0 0 3em #121315;
 }
 
 #news .container {
@@ -232,6 +233,7 @@ table {
   margin-top: 25em;
   position: relative;
   background: /*radial-gradient(var(--legend-bg2), var(--legend-bg1));*/ linear-gradient(to bottom right, var(--legend-bg1), var(--legend-bg2));
+  box-shadow: 0 0 3em #121315;
 }
 
 #legend .head {
@@ -302,6 +304,7 @@ table {
   margin-top: 25em;
   position: relative;
   background: linear-gradient(to bottom right, var(--goods-bg1), var(--goods-bg2));
+  box-shadow: 0 0 3em #121315;
 }
 
 #goods .head {
@@ -332,6 +335,7 @@ table {
   padding: 24% 0 18% 0;
   margin-top: 25em;
   position: relative;
+  box-shadow: 0 0 3em #121315;
 }
 
 #music .head {
@@ -388,6 +392,7 @@ table {
   padding: 24% 0 18% 0;
   margin-top: 25em;
   position: relative;
+  box-shadow: 0 0 3em #121315;
 }
 
 #about .head {
