@@ -2,14 +2,14 @@
 :root {
   --news-bg: #121315;
   --news-title: #f2a20c;
-  --legend-bg1: #4b3b40;
-  --legend-bg2: #82735c;
+  --legend-bg1: #FFB984;
+  --legend-bg2: #FF8B82;
   --legend-title: #f0f0f0;
   --goods-bg1: #9850d6;
   --goods-bg2: #6e5fcc;
   --goods-title: #f0f0f0;
   --music-bg: #121315;
-  --music-title: rgb(128, 211, 166);
+  --music-title: #80d3a6;
 }
 
 html {
@@ -229,7 +229,7 @@ table {
 #legend {
   margin-top: 25em;
   position: relative;
-  background: linear-gradient(to right, var(--legend-bg1), var(--legend-bg2));
+  background: /*radial-gradient(var(--legend-bg2), var(--legend-bg1));*/ linear-gradient(to bottom right, var(--legend-bg1), var(--legend-bg2));
 }
 
 #legend .head {
@@ -276,13 +276,13 @@ table {
 }
 
 #legend .tab-pane {
-  color: #dbdbdb;
+  color: white;
 }
 
 #legend .tab-pane p::first-letter {
   font-weight: bold;
   font-size: 38px;
-  color: #33bc9c;
+  color: #80d3a6;
   line-height: 26px;
   float: left;
   padding: 10px 5px 0 0;
