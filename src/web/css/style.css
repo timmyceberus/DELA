@@ -1,7 +1,8 @@
 /* GLOBAL */
 :root {
-  --news-bg: #121315;
-  --news-title: #f2a20c;
+  --news-bg1: #f4f4f4;
+  --news-bg2: #d1f1f0;
+  --news-title: #00c2d6;
   --legend-bg1: #ffb984;
   --legend-bg2: #ff8b82;
   --legend-title: #f0f0f0;
@@ -117,8 +118,8 @@ table {
 #title {
   position: relative;
   min-height: 105%;
-  background-image: url('../img/Taiwan.jpg');
-  background-position: bottom 1% center;
+  background-image: url('../img/Taiwan2.jpg');
+  background-position: bottom 3% center;
   background-repeat: no-repeat;
   background-size: cover;
   animation-delay: 0.2s;
@@ -194,14 +195,15 @@ table {
 #title .icon-box div.hover span {
   opacity: 1;
   transition: opacity 0.5s;
+  color: white;
+  text-shadow: black 0.1em 0.1em 0.2em;
 }
 
 /* NEWS */
 #news {
-  background-color: var(--news-bg);
+  background: linear-gradient(to bottom, var(--news-bg1), var(--news-bg2));
   padding: 20% 0 15% 0;
   position: relative;
-  box-shadow: 0 0 3em #121315;
 }
 
 #news .container {
