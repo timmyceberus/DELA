@@ -200,7 +200,7 @@ table {
 
 /* NEWS */
 #news {
-  background-image: url('../img/Totem4.svg');
+  background-image: url('../img/Totem.svg');
   background-color: var(--news-bg);
   background-repeat: repeat-x;
   background-position: bottom;
