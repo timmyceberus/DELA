@@ -201,7 +201,10 @@ table {
 
 /* NEWS */
 #news {
-  background: linear-gradient(to bottom, var(--news-bg1), var(--news-bg2));
+  /* background: linear-gradient(to bottom, var(--news-bg1), var(--news-bg2)); */
+  background-image: url('../img/Totem.svg'), linear-gradient(to bottom, var(--news-bg1), var(--news-bg2));
+  background-repeat: repeat-x;
+  background-position: bottom;
   padding: 20% 0 15% 0;
   position: relative;
 }
