@@ -117,8 +117,8 @@ table {
 #title {
   position: relative;
   min-height: 105%;
-  background-image: url('../img/Taiwan2.jpg');
-  background-position: bottom 3% center;
+  background-image: url('../img/Taiwan.jpg');
+  background-position: bottom 1% center;
   background-repeat: no-repeat;
   background-size: cover;
   animation-delay: 0.2s;
@@ -200,13 +200,14 @@ table {
 
 /* NEWS */
 #news {
-  background-image: url('../img/Totem.svg');
+  background-image: url('../img/Totem4.svg');
   background-color: var(--news-bg);
   background-repeat: repeat-x;
   background-position: bottom;
   padding: 20% 0 15% 0;
   position: relative;
-  box-shadow: 0 1em 1em #121315;
+
+  /* box-shadow: 0 2em 3em #121315; */
 }
 
 #news .container {
