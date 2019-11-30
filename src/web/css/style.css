@@ -206,6 +206,7 @@ table {
   background-position: bottom;
   padding: 20% 0 15% 0;
   position: relative;
+  box-shadow: 0 1em 1em #121315;
 }
 
 #news .container {
