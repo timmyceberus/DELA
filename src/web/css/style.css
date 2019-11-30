@@ -204,19 +204,12 @@ table {
   background-color: var(--news-bg);
   background-repeat: repeat-x;
   background-position: bottom;
-  padding: 20% 0 15% 0;
+  padding: 16% 0 14% 0;
   position: relative;
-
-  /* box-shadow: 0 2em 3em #121315; */
-}
-
-#news .container {
-  padding-top: 30px;
-  padding-bottom: 50px;
 }
 
 #news .head {
-  top: 15%;
+  top: 10%;
   color: var(--news-title);
 }
 
@@ -224,14 +217,23 @@ table {
   background-color: var(--news-title);
 }
 
+#news .container {
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
 #news a {
   color: var(--news-title);
 }
 
-#news img {
-  height: 40em;
-  width: 60em;
-  overflow: hidden;
+#news .carousel-item {
+  height: 500px;
+}
+
+#news .carousel-item img {
+  min-height: 500px;
+  max-height: 500px;
+  object-fit: cover;
 }
 
 /* LEGEND */
