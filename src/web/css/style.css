@@ -1,8 +1,7 @@
 /* GLOBAL */
 :root {
-  --news-bg1: #f4f4f4;
-  --news-bg2: #d1f1f0;
-  --news-title: #00c2d6;
+  --news-bg: #f6f9fc;
+  --news-title: #00c9a7;
   --legend-bg1: #ffb984;
   --legend-bg2: #ff8b82;
   --legend-title: #f0f0f0;
@@ -44,7 +43,7 @@ table {
 
 ::selection {
   background-color: #33bc9c;
-  color: gold;
+  /* color: white; */
 }
 
 /* NAVIGATION */
@@ -148,7 +147,7 @@ table {
 #title .icon-box {
   position: absolute;
   left: 3%;
-  top: 70%;
+  top: 60%;
   width: 160px;
   animation-delay: 3s;
 }
@@ -201,8 +200,8 @@ table {
 
 /* NEWS */
 #news {
-  /* background: linear-gradient(to bottom, var(--news-bg1), var(--news-bg2)); */
-  background-image: url('../img/Totem.svg'), linear-gradient(to bottom, var(--news-bg1), var(--news-bg2));
+  background-image: url('../img/Totem.svg');
+  background-color: var(--news-bg);
   background-repeat: repeat-x;
   background-position: bottom;
   padding: 20% 0 15% 0;
