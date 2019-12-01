@@ -203,8 +203,11 @@ table {
   background-image: url('../img/Totem.svg');
   background-color: var(--news-bg);
   background-repeat: repeat-x;
-  background-position: bottom;
   position: relative;
+  animation-name: slide;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
 #news .head {
@@ -232,6 +235,16 @@ table {
   min-height: 450px;
   max-height: 450px;
   object-fit: cover;
+}
+
+@keyframes slide {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 1280px 0;
+  }
 }
 
 /* LEGEND */
