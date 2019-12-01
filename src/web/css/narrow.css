@@ -60,11 +60,21 @@
     display: list-item;
   }
 
+  #news .container {
+    padding: 50% 0 14% 0;
+  }
+
   #legend .container {
     padding: 35% 0 12% 0; /* 螢幕變窄後仍正常顯示 */
   }
 
   #legend .tab-content {
     margin-top: 100px;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+  #news .container {
+    padding: 30% 0 14% 0;
   }
 }

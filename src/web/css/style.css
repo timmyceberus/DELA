@@ -204,7 +204,6 @@ table {
   background-color: var(--news-bg);
   background-repeat: repeat-x;
   background-position: bottom;
-  padding: 16% 0 14% 0;
   position: relative;
 }
 
@@ -218,8 +217,7 @@ table {
 }
 
 #news .container {
-  padding-top: 30px;
-  padding-bottom: 50px;
+  padding: 16% 0 14% 0;
 }
 
 #news a {
@@ -227,12 +225,12 @@ table {
 }
 
 #news .carousel-item {
-  height: 500px;
+  height: 450px;
 }
 
 #news .carousel-item img {
-  min-height: 500px;
-  max-height: 500px;
+  min-height: 450px;
+  max-height: 450px;
   object-fit: cover;
 }
 
