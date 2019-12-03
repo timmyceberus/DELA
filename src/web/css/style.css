@@ -200,7 +200,7 @@ table {
 
 /* NEWS */
 #news {
-  background-image: url('../img/Totem.svg');
+  background-image: url('../img/Totem-1.svg'), url('../img/Totem-2.svg');
   background-color: var(--news-bg);
   background-repeat: repeat-x;
   position: relative;
@@ -239,11 +239,11 @@ table {
 
 @keyframes slide {
   0% {
-    background-position: 0 0;
+    background-position: 0 200px, 0 500px;
   }
 
   100% {
-    background-position: 1280px 0;
+    background-position: 1280px 200px, -1280px 500px;
   }
 }
 
