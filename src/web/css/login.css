@@ -101,11 +101,11 @@ input:focus + span.float {
 }
 
 span.float.error {
-  background-color: rgb(216, 114, 116);
+  background-color: #CB4042;
 }
 
 span.faded.error {
-  background-color: #CB4042;
+  background-color: rgb(216, 114, 116);
 }
 
 button {

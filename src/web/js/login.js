@@ -6,7 +6,13 @@ $('button[type=submit]').on('click', () => {
         localStorage.setItem('name', name);
         window.location.href = "index.html"
     }
-    else if(password==='') {
+    
+    if (name==='') {
+        $('input[type=e-mail] ~ span.float').addClass('error');
+        $('input[type=e-mail] ~ span.faded').addClass('error');
+    }
+
+    if (password==='') {
         $('input[type=password] ~ span.float').addClass('error');
         $('input[type=password] ~ span.faded').addClass('error');
     }
