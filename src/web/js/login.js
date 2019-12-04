@@ -6,7 +6,7 @@ $('button[type=submit]').on('click', () => {
         localStorage.setItem('name', name);
         window.location.href = "index.html"
     }
-    
+
     if (name==='') {
         $('input[type=e-mail] ~ span.float').addClass('error');
         $('input[type=e-mail] ~ span.faded').addClass('error');
@@ -21,4 +21,9 @@ $('button[type=submit]').on('click', () => {
 $('input[type=password]').on('keydown', ()=>{
     $('input[type=password] ~ span.float').removeClass('error');
     $('input[type=password] ~ span.faded').removeClass('error');
+})
+
+$('input[type=e-mail]').on('keydown', ()=>{
+    $('input[type=e-mail] ~ span.float').removeClass('error');
+    $('input[type=e-mail] ~ span.faded').removeClass('error');
 })
