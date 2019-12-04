@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/font-awesome.min.css">
@@ -20,7 +22,7 @@
 
     <div id="login-box" class="animated fadeIn">
         <h1>LOGIN</h1>
-        <form>
+        <div>
             <div>
                 <i class="far fa-user"></i>
                 <input type="e-mail" name="e-mail" id="e-mail" placeholder="帳號">
@@ -34,12 +36,11 @@
                 <span class="faded"></span>
             </div>
             <br>
-            <!-- <input type="submit" name="submit" id="submit" value="送出"> -->
-            <button>送出</button>
-        </form>
+            <button type="submit">送出</button>
+        </div>
     </div>
 
-
+    <script src="../js/login.js"></script>
 </body>
 
 </html>
