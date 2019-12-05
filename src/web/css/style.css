@@ -107,10 +107,14 @@ table {
   margin: 12px 20px;
 }
 
-#login-btn {
+#login-section {
   position: absolute;
   right: 0;
-  margin: 12px 20px;
+}
+
+#login-section div {
+  padding: 0;
+  display: none;
 }
 
 /* TITLE */
@@ -257,7 +261,7 @@ table {
 #legend {
   margin-top: 25em;
   position: relative;
-  background: /*radial-gradient(var(--legend-bg2), var(--legend-bg1));*/ linear-gradient(to bottom right, var(--legend-bg1), var(--legend-bg2));
+  background: linear-gradient(to bottom right, var(--legend-bg1), var(--legend-bg2));
   box-shadow: 0 0 3em #121315;
 }
 
@@ -274,11 +278,41 @@ table {
   padding: 22% 0 12% 0; /* 螢幕變窄後仍正常顯示 */
 }
 
-#legend .list-group-item.active {
-  background-color: white !important;
+#legend .list-group-item.active { /* Selected item's background color */
   border-color: black;
   border-width: 2px;
   color: black;
+  background-image: radial-gradient(white, rgb(223, 223, 223)) /*-gradient(to bottom right, white, gray)*/;
+  animation-name: selected-item;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 5s;
+}
+
+@keyframes selected-item {
+  0% {
+    background-position: 0 0;
+  }
+
+  20% {
+    background-position: 161px 0;
+  }
+
+  40% {
+    background-position: 161px 48px;
+  }
+
+  60% {
+    background-position: 0 0;
+  }
+
+  80% {
+    background-position: 0 48px;
+  }
+
+  100% {
+    background-position: 161px 0;
+  }
 }
 
 #legend .list-group-item {

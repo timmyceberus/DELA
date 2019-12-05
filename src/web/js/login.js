@@ -16,6 +16,7 @@ function submit() {
   if (password === '') {
     $('input[type=password] ~ span.float').addClass('error');
     $('input[type=password] ~ span.faded').addClass('error');
+<<<<<<< HEAD
     $('input[type=password] ~ .error-message').addClass('show');
   }
 }
@@ -39,3 +40,17 @@ $('input[type=text], input[type=password]').on('keypress', (event) => {
     submit();
   }
 })
+=======
+  }
+});
+
+$('input[type=password]').on('keydown', () => {
+  $('input[type=password] ~ span.float').removeClass('error');
+  $('input[type=password] ~ span.faded').removeClass('error');
+});
+
+$('input[type=e-mail]').on('keydown', () => {
+  $('input[type=e-mail] ~ span.float').removeClass('error');
+  $('input[type=e-mail] ~ span.faded').removeClass('error');
+});
+>>>>>>> 登入顯示訊息及記錄名稱

@@ -129,3 +129,11 @@ if ($(window).scrollTop() < $('#news').offset().top) {
   $('#index-img-3').hide();
   $('#index-img-4').show();
 }
+
+// GET USER NAME FROM LOCAL STORAGE
+if (localStorage.getItem('name') !== null) {
+  $('#login-section button').hide();
+  $('#login-section div').show();
+
+  $('#user-name').text(localStorage.getItem('name'));
+}
