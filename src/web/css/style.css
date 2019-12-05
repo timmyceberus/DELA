@@ -424,6 +424,63 @@ table {
   transition: opacity 0.2s;
 }
 
+/* PLlayer */
+#player {
+  position: fixed;
+  display: flex;
+  background-color: #121315;
+  height: 90px;
+  width: 100%;
+  z-index: 3;
+  bottom: 0;
+  color: white;
+}
+
+#player .album-cover {
+  margin: 15px 15px;
+}
+
+#player .song-info-wrapper {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#player .song-title {
+  display: inline-flex;
+  top: 20px;
+}
+
+#player .song-artist {
+  display: inline-flex;
+  top: 50px;
+  font-size: 12px;
+}
+
+#player .player-control-wrapper {
+  display: inline-block;
+  margin: 0 50px;
+  width: 60%;
+  height: 100%;
+}
+
+#player .player-control {
+  margin: 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#player .player-control div {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+#player .player-control i {
+  font-size: 25px;
+}
+
+
+
 /* About */
 #about {
   background-color: #121315;
