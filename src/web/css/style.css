@@ -305,6 +305,18 @@ table {
   background-color: #33cc70;
 }
 
+#legend #list-beinan-list {
+  background-color: rgb(255, 136, 0);
+}
+
+#legend #list-may-list {
+  background-color: #cc33bf;
+}
+
+#legend #list-sadek-list {
+  background-color: #c9cc33;
+}
+
 #legend .tab-pane {
   color: white;
 }
