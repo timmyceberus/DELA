@@ -101,11 +101,47 @@ input:focus + span.float {
 }
 
 span.float.error {
-  background-color: #CB4042;
+  background-color: #ff5652;
 }
 
 span.faded.error {
-  background-color: rgb(216, 114, 116);
+  background-color: #d39899;
+}
+
+.error-message {
+  position: absolute !important ;
+  background-color: #ff5652;
+  border-radius: 3px;
+  right: -60%;
+  top: 0;
+  height: 30px;
+  width: 100px;
+  color: white;
+  opacity: 0;
+}
+
+.error-message::before {
+  content: "";
+  border-width : 9px;
+  border-color: transparent #FF5652 transparent transparent;
+  position: absolute;
+  left: -17px;
+  top: 6px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.error-message.show,
+.error-message.show::before {
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+.error-message span {
+  vertical-align: middle;
 }
 
 button {
