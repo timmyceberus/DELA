@@ -136,6 +136,12 @@ table {
   text-align: center;
   font-size: 10em;
   animation-delay: 1.5s;
+  font-family: 'Italiana', sans-serif;
+}
+
+@font-face {
+  font-family: Italiana;
+  src: url("../fonts/italiana-regular.otf");
 }
 
 #title h6 {
