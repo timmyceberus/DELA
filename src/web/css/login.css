@@ -109,7 +109,7 @@ span.faded.error {
 }
 
 .error-message {
-  position: absolute !important ;
+  position: absolute !important;
   background-color: #ff5652;
   border-radius: 3px;
   right: -60%;
@@ -122,8 +122,8 @@ span.faded.error {
 
 .error-message::before {
   content: "";
-  border-width : 9px;
-  border-color: transparent #FF5652 transparent transparent;
+  border-width: 9px;
+  border-color: transparent #ff5652 transparent transparent;
   position: absolute;
   left: -17px;
   top: 6px;

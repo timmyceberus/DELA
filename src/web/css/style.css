@@ -475,18 +475,25 @@ table {
 }
 
 #player .song-info-wrapper {
-  display: inline-block;
-  vertical-align: middle;
+  display: flex;
+  flex-direction: column;
+  width: 10%;
 }
 
 #player .song-title {
-  display: inline-flex;
-  top: 20px;
+  display: flex;
+  flex: 1;
+  width: 100%;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 #player .song-artist {
-  display: inline-flex;
-  top: 50px;
+  display: flex;
+  flex: 1;
+  width: 100%;
+  justify-content: center;
+  padding-top: 6px;
   font-size: 12px;
 }
 
@@ -498,7 +505,7 @@ table {
 }
 
 #player .player-control {
-  margin: 15px 0;
+  margin: 20px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -509,11 +516,18 @@ table {
   margin: 0 20px;
 }
 
-#player .player-control i {
+#player .player-control .previous-button i,
+#player .player-control .next-button i {
+  font-size: 20px;
+}
+
+#player .player-control .play-button i {
   font-size: 25px;
 }
 
-
+#player .player-control i:hover {
+  color: #17a2b8;
+}
 
 /* About */
 #about {

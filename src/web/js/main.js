@@ -137,3 +137,24 @@ if (localStorage.getItem('name') !== null) {
 
   $('#user-name').text(localStorage.getItem('name'));
 }
+
+// AUDIO PLAY
+$(document).on('click', '.play', function pl() {
+  $('audio')[0].play();
+  $(this).removeClass('play');
+  $(this).addClass('pause');
+  $(this).html('<i class="fas fa-pause"></i>');
+});
+
+$(document).on('click', '.pause', function pa() {
+  $('audio')[0].pause();
+  $(this).removeClass('pause');
+  $(this).addClass('play');
+  $(this).html('<i class="fas fa-play"></i>');
+});
+
+$('audio').on('timeupdate', () => {
+  const audio = document.getElementsByTagName('audio')[0];
+  const percentage = (audio.currentTime / audio.duration) * 100;
+  $('.progress-bar').css('width', `${percentage}%`);
+});
