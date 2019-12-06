@@ -529,6 +529,18 @@ table {
   color: #17a2b8;
 }
 
+#player .progress {
+  cursor: pointer;
+  margin-top: 10px;
+  height: 5px;
+  width: 100%;
+}
+
+#player .progress-bar {
+  width: 0;
+  height: 5px;
+}
+
 /* About */
 #about {
   background-color: #121315;
