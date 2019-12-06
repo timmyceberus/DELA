@@ -159,9 +159,8 @@ $('audio').on('timeupdate', () => {
   $('.progress-bar').css('width', `${percentage}%`);
 });
 
-$('.progress').on('click', function f(event) {
+$('.progress-wrapper').on('click', function f(event) {
   const audio = document.getElementsByTagName('audio')[0];
   const percentage = (event.pageX - $(this).offset().left) / $(this).width();
   audio.currentTime = audio.duration * percentage;
-  console.log(audio.currentTime);
 });
