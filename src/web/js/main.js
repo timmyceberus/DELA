@@ -141,9 +141,16 @@ if (localStorage.getItem('name') !== null) {
 // AUDIO PLAY
 
 const playlist = ['', '斯瓦細格', 'Voyage', 'vavayan女人', '洄游'];
+const audio = document.getElementsByTagName('audio')[0];
+
+// Leading zero
+function pad(num) {
+  let s = `${num}`;
+  while (s.length < 2) s = `0${s}`;
+  return s;
+}
 
 function play() {
-  const audio = document.getElementsByTagName('audio')[0];
   audio.play();
   $('.play-button').html('<i class="fas fa-pause"></i>');
 
@@ -152,7 +159,6 @@ function play() {
 }
 
 function pause() {
-  const audio = document.getElementsByTagName('audio')[0];
   audio.pause();
   $('.play-button').html('<i class="fas fa-play"></i>');
 
@@ -161,7 +167,6 @@ function pause() {
 }
 
 function nextSong(track) {
-  const audio = document.getElementsByTagName('audio')[0];
   if (track < 1 || track > 4) {
     pause();
     return;
@@ -189,14 +194,20 @@ function nextSong(track) {
   $('.play-button').html('<i class="fas fa-pause"></i>');
 }
 
-$('audio').on('timeupdate', () => {
-  const audio = document.getElementsByTagName('audio')[0];
-  const percentage = (audio.currentTime / audio.duration) * 100;
-  $('.progress-bar').css('width', `${percentage}%`);
+// Change duration
+$('audio').on('loadedmetadata', () => {
+  $('.end-time').text(`${Math.floor(audio.duration / 60)}:${pad(Math.floor(audio.duration) % 60)}`);
 });
 
+$('audio').on('timeupdate', () => {
+  const percentage = (audio.currentTime / audio.duration) * 100;
+  $('.progress-bar').css('width', `${percentage}%`);
+  $('.start-time').text(`${Math.floor(audio.currentTime / 60)}:${pad(Math.floor(audio.currentTime) % 60)}`);
+});
+
+// Auto play next song
 $('audio').on('ended', function func() {
-  nextSong(parseInt($(this).attr('track')) + 1); // Auto play next song
+  nextSong(parseInt($(this).attr('track'), 10) + 1);
 });
 
 $('.play-button').on('click', function func() {
@@ -207,29 +218,22 @@ $('.play-button').on('click', function func() {
   }
 });
 
-$('.previous-button').on('click', function func() {
-  const track = parseInt($('audio').attr('track')) - 1;
-  if (track >= 1) {
-    nextSong(track);
-  }
+$('.previous-button').on('click', () => {
+  const track = parseInt($('audio').attr('track'), 10) - 1;
+  if (track >= 1) nextSong(track);
 });
 
-$('.next-button').on('click', function func() {
-  const track = parseInt($('audio').attr('track')) + 1;
-  if (track <= 4){
-    nextSong(track);
-  }
+$('.next-button').on('click', () => {
+  const track = parseInt($('audio').attr('track'), 10) + 1;
+  if (track <= 4) nextSong(track);
 });
 
-$('.progress-wrapper').on('click', function f(event) {
-  const audio = document.getElementsByTagName('audio')[0];
+$('.progress-box').on('click', function f(event) {
   const percentage = (event.pageX - $(this).offset().left) / $(this).width();
   audio.currentTime = audio.duration * percentage;
 });
 
 $('.play-btn').on('click', function f() {
-  const audio = document.getElementsByTagName('audio')[0];
-
   // Playing then pause
   if ($(this).html() === '<i class="far fa-pause-circle"></i>') {
     pause();

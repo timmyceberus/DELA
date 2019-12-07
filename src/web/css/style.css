@@ -517,7 +517,7 @@ table {
 }
 
 #player .player-control {
-  margin: 20px 0;
+  margin: 20px 0 12px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -543,7 +543,23 @@ table {
 }
 
 #player .progress-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+#player .start-time {
+  display: flex;
+  margin-right: 5px;
+}
+
+#player .end-time {
+  display: flex;
+  margin-left: 5px;
+}
+
+#player .progress-box {
   cursor: pointer;
+  display: flex;
   height: 15px;
   width: 100%;
   padding-top: 5px;
