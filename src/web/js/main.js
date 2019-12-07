@@ -172,6 +172,7 @@ const playlist = ['', '斯瓦細格', 'Voyage', 'vavayan女人', '洄游'];
 
 $('.play-btn').on('click', function f() {
   const audio = document.getElementsByTagName('audio')[0];
+  
 
   // Playing then pause
   if ($(this).html() === '<i class="far fa-pause-circle"></i>') {
@@ -195,6 +196,17 @@ $('.play-btn').on('click', function f() {
   $('.album-slider').css({
     transform: `translate(-${distance}px, 0)`,
   });
+
+  // Cnange song title
+  // audio.getAttribute('track')
+  $('.song-title').text($(this).parent().prev().prev()
+    .prev()
+    .find('div')
+    .text());
+
+  $('.song-artist').text($(this).parent().prev().prev()
+    .find('div')
+    .text());
 
   // Change audio
   audio.setAttribute('src', `../audio/${playlist[track]}.mp3`);
