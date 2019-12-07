@@ -139,74 +139,43 @@ if (localStorage.getItem('name') !== null) {
 }
 
 // AUDIO PLAY
-$('.play-button').on('click', function pl() {
-  const audio = document.getElementsByTagName('audio')[0];
-  if ($(this).html() === '<i class="fas fa-play"></i>') {
-    audio.play();
-    $(this).html('<i class="fas fa-pause"></i>');
-
-    $(`.play-btn[data-track=${audio.getAttribute('track')}]`)
-      .html('<i class="far fa-pause-circle"></i>');
-  } else {
-    audio.pause();
-    $(this).html('<i class="fas fa-play"></i>');
-
-    $(`.play-btn[data-track=${audio.getAttribute('track')}]`)
-      .html('<i class="far fa-play-circle"></i>');
-  }
-});
-
-$('audio').on('timeupdate', () => {
-  const audio = document.getElementsByTagName('audio')[0];
-  const percentage = (audio.currentTime / audio.duration) * 100;
-  $('.progress-bar').css('width', `${percentage}%`);
-});
-
-$('.progress-wrapper').on('click', function f(event) {
-  const audio = document.getElementsByTagName('audio')[0];
-  const percentage = (event.pageX - $(this).offset().left) / $(this).width();
-  audio.currentTime = audio.duration * percentage;
-});
 
 const playlist = ['', '斯瓦細格', 'Voyage', 'vavayan女人', '洄游'];
 
-$('.play-btn').on('click', function f() {
+function play() {
   const audio = document.getElementsByTagName('audio')[0];
-  
+  audio.play();
+  $('.play-button').html('<i class="fas fa-pause"></i>');
 
-  // Playing then pause
-  if ($(this).html() === '<i class="far fa-pause-circle"></i>') {
-    audio.pause();
-    $(this).html('<i class="far fa-play-circle"></i>');
-    $('.play-button').html('<i class="fas fa-play"></i>');
+  $(`.play-btn[data-track=${audio.getAttribute('track')}]`)
+    .html('<i class="far fa-pause-circle"></i>');
+}
+
+function pause() {
+  const audio = document.getElementsByTagName('audio')[0];
+  audio.pause();
+  $('.play-button').html('<i class="fas fa-play"></i>');
+
+  $(`.play-btn[data-track=${audio.getAttribute('track')}]`)
+    .html('<i class="far fa-play-circle"></i>');
+}
+
+function nextSong(track) {
+  const audio = document.getElementsByTagName('audio')[0];
+  if (track > 4) {
+    pause();
     return;
   }
 
-  // Same song and pausing then play
-  if ($(this).data('track') === parseInt(audio.getAttribute('track'), 10)) {
-    audio.play();
-    $(this).html('<i class="far fa-pause-circle"></i>');
-    $('.play-button').html('<i class="fas fa-pause"></i>');
-    return;
-  }
-
-  // Slide album cover
-  const track = $(this).data('track');
+  // Slide album
   const distance = (track - 1) * 90;
   $('.album-slider').css({
     transform: `translate(-${distance}px, 0)`,
   });
 
   // Cnange song title
-  // audio.getAttribute('track')
-  $('.song-title').text($(this).parent().prev().prev()
-    .prev()
-    .find('div')
-    .text());
-
-  $('.song-artist').text($(this).parent().prev().prev()
-    .find('div')
-    .text());
+  $('.song-title').text($(`.album[data-track=${track}]`).text());
+  $('.song-artist').text($(`.singer[data-track=${track}]`).text());
 
   // Change audio
   audio.setAttribute('src', `../audio/${playlist[track]}.mp3`);
@@ -216,7 +185,48 @@ $('.play-btn').on('click', function f() {
 
   // Change icons
   $('.play-btn').html('<i class="far fa-play-circle"></i>');
-  $(this).html('<i class="far fa-pause-circle"></i>');
-
+  $(`.play-btn[data-track=${track}]`).html('<i class="far fa-pause-circle"></i>');
   $('.play-button').html('<i class="fas fa-pause"></i>');
+}
+
+$('.play-button').on('click', function func() {
+  if ($(this).html() === '<i class="fas fa-play"></i>') {
+    play();
+  } else {
+    pause();
+  }
+});
+
+$('audio').on('timeupdate', () => {
+  const audio = document.getElementsByTagName('audio')[0];
+  const percentage = (audio.currentTime / audio.duration) * 100;
+  $('.progress-bar').css('width', `${percentage}%`);
+});
+
+$('audio').on('ended', function func() {
+  nextSong($(this).attr('track') + 1); // Auto play next song
+});
+
+$('.progress-wrapper').on('click', function f(event) {
+  const audio = document.getElementsByTagName('audio')[0];
+  const percentage = (event.pageX - $(this).offset().left) / $(this).width();
+  audio.currentTime = audio.duration * percentage;
+});
+
+$('.play-btn').on('click', function f() {
+  const audio = document.getElementsByTagName('audio')[0];
+
+  // Playing then pause
+  if ($(this).html() === '<i class="far fa-pause-circle"></i>') {
+    pause();
+    return;
+  }
+
+  // Same song and pausing then play
+  if ($(this).data('track') === parseInt(audio.getAttribute('track'), 10)) {
+    play();
+    return;
+  }
+
+  nextSong($(this).data('track'));
 });
