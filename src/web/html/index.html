@@ -48,7 +48,8 @@
                         class="fa fa-align-justify"></i></button></li>
             <li>
                 <div id="login-section" style="padding: 0;">
-                    <button class="btn btn-info" style="margin: 12px 20px;" onclick="location.href='login.html'">登入</button>
+                    <button class="btn btn-info" style="margin: 12px 20px;"
+                        onclick="location.href='login.html'">登入</button>
                     <div style="padding: 18px 20px;">你好，<span id="user-name"></span></div>
                 </div>
             </li>
@@ -352,8 +353,7 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <th> <a href=""><img width="50" height="50"
-                                    src="https://img1.doubanio.com/view/subject/m/public/s29719839.jpg" alt=""></a>
+                        <th> <a href=""><img width="50" height="50" src="../img/track_1.jpg" alt=""></a>
                         </th>
                         <td>
                             <div class="album">斯瓦細格</div>
@@ -365,12 +365,11 @@
                             <div class="studio">好哦工作室</div>
                         </td>
                         <td>
-                            <div class="play-btn"><i class="far fa-play-circle"></i></div>
+                            <div class="play-btn" data-track="1"><i class="far fa-play-circle"></i></div>
                         </td>
                     </tr>
                     <tr>
-                        <th> <a href=""><img width="50" height="50"
-                                    src="https://img1.doubanio.com/view/subject/m/public/s29600269.jpg" alt=""></a>
+                        <th> <a href=""><img width="50" height="50" src="../img/track_2.jpg" alt=""></a>
                         </th>
                         <td>
                             <div class="album">Voyage</div>
@@ -382,12 +381,11 @@
                             <div class="studio">藤音樂工作室</div>
                         </td>
                         <td>
-                            <div class="play-btn"><i class="far fa-play-circle"></i></div>
+                            <div class="play-btn" data-track="2"><i class="far fa-play-circle"></i></div>
                         </td>
                     </tr>
                     <tr>
-                        <th> <a href=""><img width="50" height="50"
-                                    src="https://img3.doubanio.com/view/subject/m/public/s29001225.jpg" alt=""></a>
+                        <th> <a href=""><img width="50" height="50" src="../img/track_3.jpg" alt=""></a>
                         </th>
                         <td>
                             <div class="album">vavayan女人</div>
@@ -399,12 +397,11 @@
                             <div class="studio">十一音像有限公司</div>
                         </td>
                         <td>
-                            <div class="play-btn"><i class="far fa-play-circle"></i></div>
+                            <div class="play-btn" data-track="3"><i class="far fa-play-circle"></i></div>
                         </td>
                     </tr>
                     <tr>
-                        <th> <a href=""><img width="50" height="50"
-                                    src="https://img3.doubanio.com/view/subject/m/public/s33499493.jpg" alt=""></a>
+                        <th> <a href=""><img width="50" height="50" src="../img/track_4.jpg" alt=""></a>
                         </th>
                         <td>
                             <div class="album">洄游</div>
@@ -416,7 +413,7 @@
                             <div class="studio">風潮音樂國際股份有限公司</div>
                         </td>
                         <td>
-                            <div class="play-btn"><i class="far fa-play-circle"></i></div>
+                            <div class="play-btn" data-track="4"><i class="far fa-play-circle"></i></div>
                         </td>
                     </tr>
                 </tbody>
@@ -425,8 +422,15 @@
     </div>
 
     <div id="player">
-        <img class="album-cover" src="https://img1.doubanio.com/view/subject/m/public/s29719839.jpg" height="60px"
-            alt="">
+        <div class="album-wrapper">
+            <div class="album-slider" style="display: flex;">
+                <img class="album-cover" src="../img/track_1.jpg" data-track="1" height="60px" width="60px" alt="">
+                <img class="album-cover" src="../img/track_2.jpg" data-track="2" height="60px" width="60px" alt="">
+                <img class="album-cover" src="../img/track_3.jpg" data-track="3" height="60px" width="60px" alt="">
+                <img class="album-cover" src="../img/track_4.jpg" data-track="4" height="60px" width="60px" alt="">
+            </div>
+        </div>
+
         <div class="song-info-wrapper">
             <span class="song-title">斯瓦細格</span>
             <span class="song-artist">雅維·茉芮</span>
@@ -443,11 +447,11 @@
                     </div>
                 </div>
             </div>
-            
+
         </div>
     </div>
 
-    <audio src="../audio/斯瓦細格.mp3"></audio>
+    <audio src="../audio/斯瓦細格.mp3" track="1"></audio>
 
     <!-- About us -->
     <div id="about">

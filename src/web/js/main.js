@@ -139,18 +139,21 @@ if (localStorage.getItem('name') !== null) {
 }
 
 // AUDIO PLAY
-$(document).on('click', '.play', function pl() {
-  $('audio')[0].play();
-  $(this).removeClass('play');
-  $(this).addClass('pause');
-  $(this).html('<i class="fas fa-pause"></i>');
-});
+$('.play-button').on('click', function pl() {
+  const audio = document.getElementsByTagName('audio')[0];
+  if ($(this).html() === '<i class="fas fa-play"></i>') {
+    audio.play();
+    $(this).html('<i class="fas fa-pause"></i>');
 
-$(document).on('click', '.pause', function pa() {
-  $('audio')[0].pause();
-  $(this).removeClass('pause');
-  $(this).addClass('play');
-  $(this).html('<i class="fas fa-play"></i>');
+    $(`.play-btn[data-track=${audio.getAttribute('track')}]`)
+      .html('<i class="far fa-pause-circle"></i>');
+  } else {
+    audio.pause();
+    $(this).html('<i class="fas fa-play"></i>');
+
+    $(`.play-btn[data-track=${audio.getAttribute('track')}]`)
+      .html('<i class="far fa-play-circle"></i>');
+  }
 });
 
 $('audio').on('timeupdate', () => {
@@ -163,4 +166,45 @@ $('.progress-wrapper').on('click', function f(event) {
   const audio = document.getElementsByTagName('audio')[0];
   const percentage = (event.pageX - $(this).offset().left) / $(this).width();
   audio.currentTime = audio.duration * percentage;
+});
+
+const playlist = ['', '斯瓦細格', 'Voyage', 'vavayan女人', '洄游'];
+
+$('.play-btn').on('click', function f() {
+  const audio = document.getElementsByTagName('audio')[0];
+
+  // Playing then pause
+  if ($(this).html() === '<i class="far fa-pause-circle"></i>') {
+    audio.pause();
+    $(this).html('<i class="far fa-play-circle"></i>');
+    $('.play-button').html('<i class="fas fa-play"></i>');
+    return;
+  }
+
+  // Same song and pausing then play
+  if ($(this).data('track') === parseInt(audio.getAttribute('track'), 10)) {
+    audio.play();
+    $(this).html('<i class="far fa-pause-circle"></i>');
+    $('.play-button').html('<i class="fas fa-pause"></i>');
+    return;
+  }
+
+  // Slide album cover
+  const track = $(this).data('track');
+  const distance = (track - 1) * 90;
+  $('.album-slider').css({
+    transform: `translate(-${distance}px, 0)`,
+  });
+
+  // Change audio
+  audio.setAttribute('src', `../audio/${playlist[track]}.mp3`);
+  audio.setAttribute('track', `${track}`);
+  audio.currentTime = 0;
+  audio.play();
+
+  // Change icons
+  $('.play-btn').html('<i class="far fa-play-circle"></i>');
+  $(this).html('<i class="far fa-pause-circle"></i>');
+
+  $('.play-button').html('<i class="fas fa-pause"></i>');
 });
