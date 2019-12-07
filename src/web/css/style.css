@@ -539,6 +539,7 @@ table {
 
 #player .player-control i:hover {
   color: #17a2b8;
+  cursor: pointer;
 }
 
 #player .progress-wrapper {

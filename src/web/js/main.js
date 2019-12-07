@@ -162,7 +162,7 @@ function pause() {
 
 function nextSong(track) {
   const audio = document.getElementsByTagName('audio')[0];
-  if (track > 4) {
+  if (track < 1 || track > 4) {
     pause();
     return;
   }
@@ -189,6 +189,16 @@ function nextSong(track) {
   $('.play-button').html('<i class="fas fa-pause"></i>');
 }
 
+$('audio').on('timeupdate', () => {
+  const audio = document.getElementsByTagName('audio')[0];
+  const percentage = (audio.currentTime / audio.duration) * 100;
+  $('.progress-bar').css('width', `${percentage}%`);
+});
+
+$('audio').on('ended', function func() {
+  nextSong(parseInt($(this).attr('track')) + 1); // Auto play next song
+});
+
 $('.play-button').on('click', function func() {
   if ($(this).html() === '<i class="fas fa-play"></i>') {
     play();
@@ -197,14 +207,18 @@ $('.play-button').on('click', function func() {
   }
 });
 
-$('audio').on('timeupdate', () => {
-  const audio = document.getElementsByTagName('audio')[0];
-  const percentage = (audio.currentTime / audio.duration) * 100;
-  $('.progress-bar').css('width', `${percentage}%`);
+$('.previous-button').on('click', function func() {
+  const track = parseInt($('audio').attr('track')) - 1;
+  if (track >= 1) {
+    nextSong(track);
+  }
 });
 
-$('audio').on('ended', function func() {
-  nextSong($(this).attr('track') + 1); // Auto play next song
+$('.next-button').on('click', function func() {
+  const track = parseInt($('audio').attr('track')) + 1;
+  if (track <= 4){
+    nextSong(track);
+  }
 });
 
 $('.progress-wrapper').on('click', function f(event) {
