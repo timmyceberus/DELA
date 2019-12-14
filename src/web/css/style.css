@@ -10,6 +10,7 @@
   --goods-title: #f0f0f0;
   --music-bg: #121315;
   --music-title: #80d3a6;
+  --player-bg: #282828;
 }
 
 html {
@@ -463,12 +464,17 @@ table {
 #player {
   position: fixed;
   display: flex;
-  background-color: #282828;
+  background-color: var(--player-bg);
   height: 90px;
   width: 100%;
   z-index: 200;
-  bottom: 0;
+  bottom: -90px;
   color: white;
+  transition: transform 0.5s ease;
+}
+
+#player.show {
+  transform: translate(0, -90px);
 }
 
 #player .album-wrapper {
@@ -542,6 +548,10 @@ table {
   cursor: pointer;
 }
 
+#player .player-control i:active {
+  color: #1762b8;
+}
+
 #player .progress-wrapper {
   display: flex;
   align-items: center;
@@ -573,6 +583,19 @@ table {
 #player .progress-bar {
   width: 0;
   height: 5px;
+}
+
+#player .hide-player-button {
+  position: absolute;
+  height: 30px;
+  width: 40px;
+  top: -30px;
+  right: 5px;
+  background-color: var(--player-bg);
+  border: none;
+  outline: none;
+  color: white;
+  transform: perspective(10px) rotateX(10deg);
 }
 
 /* About */

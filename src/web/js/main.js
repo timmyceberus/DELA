@@ -234,6 +234,10 @@ $('.progress-box').on('click', function f(event) {
 });
 
 $('.play-btn').on('click', function f() {
+
+  $('#player').addClass('show');
+  $('.hide-player-button').html('<i class="fas fa-chevron-down"></i>');
+
   // Playing then pause
   if ($(this).html() === '<i class="far fa-pause-circle"></i>') {
     pause();
@@ -248,3 +252,12 @@ $('.play-btn').on('click', function f() {
 
   nextSong($(this).data('track'));
 });
+
+$('.hide-player-button').on('click', function (){
+  $('#player').toggleClass('show');
+  if($('#player').hasClass('show')){
+    $(this).html('<i class="fas fa-chevron-down"></i>')
+  } else {
+    $(this).html('<i class="fas fa-chevron-up"></i>');
+  }
+})
