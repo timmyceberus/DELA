@@ -22,6 +22,12 @@ router.get('/login', async(ctx, next)=>{
     ctx.body = createReadStream('./src/web/html/login.html');
 });
 
+router.get('*', async(ctx, next)=>{
+    ctx.status = 404;
+    ctx.type = 'html';
+    ctx.body = createReadStream('./src/web/html/404.html');
+})
+
 app.use(staticMiddleware)
 app.use(router.routes());
 app.use(router.allowedMethods());
