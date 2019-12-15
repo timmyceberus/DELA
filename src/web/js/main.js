@@ -3,7 +3,7 @@ $('#show-nav-btn').on('click', () => {
   $('#vertical-nav').toggle();
 });
 
-$('.nav-item').on('click', function scroll() {
+$('.nav-item').on('click', function () {
   const value = $(this).find('div').text();
 
   switch (value) {
@@ -59,11 +59,11 @@ $('.nav-item').on('click', function scroll() {
 });
 
 // TITLE
-$('.icon-box div').on('mouseover', function iconsMouseover() {
+$('.icon-box div').on('mouseover', function () {
   $(this).addClass('hover');
 });
 
-$('.icon-box div').on('mouseout', function iconsMouseover() {
+$('.icon-box div').on('mouseout', function () {
   $(this).removeClass('hover');
 });
 
@@ -206,11 +206,11 @@ $('audio').on('timeupdate', () => {
 });
 
 // Auto play next song
-$('audio').on('ended', function func() {
+$('audio').on('ended', function () {
   nextSong(parseInt($(this).attr('track'), 10) + 1);
 });
 
-$('.play-button').on('click', function func() {
+$('.play-button').on('click', function () {
   if ($(this).html() === '<i class="fas fa-play"></i>') {
     play();
   } else {
@@ -228,12 +228,15 @@ $('.next-button').on('click', () => {
   if (track <= 4) nextSong(track);
 });
 
-$('.progress-box').on('click', function f(event) {
+$('.progress-box').on('click', function () {
   const percentage = (event.pageX - $(this).offset().left) / $(this).width();
-  audio.currentTime = audio.duration * percentage;
+  audio.addEventListener('seeked', function (){
+    audio.currentTime = audio.duration * percentage;
+    audio.play();
+  }, true);
 });
 
-$('.play-btn').on('click', function f() {
+$('.play-btn').on('click', function () {
 
   $('#player').addClass('show');
   $('.hide-player-button').html('<i class="fas fa-chevron-down"></i>');

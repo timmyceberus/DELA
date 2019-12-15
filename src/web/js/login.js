@@ -4,7 +4,7 @@ function submit() {
 
   if (name !== '' && password !== '') {
     localStorage.setItem('name', name);
-    window.location.href = 'index.html';
+    window.location.href = './';
   }
 
   if (name === '') {
