@@ -114,6 +114,46 @@ table {
   right: 0;
 }
 
+#log-out-nav {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 60px;
+  right: 12px;
+  width: 100px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: background-color 0.2s;
+}
+
+#log-out-nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+#log-out-nav li {
+  list-style-type: none;
+  transition: background-color 0.2s;
+}
+
+#log-out-nav li:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s;
+}
+
+#log-out-nav div {
+  color: white;
+  text-align: center;
+  padding: 5px 10px;
+  display: block;
+  cursor: pointer;
+}
+
+#log-out-nav div:hover {
+  color: rgb(194, 194, 194);
+  opacity: 0.9;
+}
+
 #login-section div {
   padding: 0;
   display: none;

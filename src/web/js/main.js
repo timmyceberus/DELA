@@ -1,6 +1,23 @@
+//GLOBAL
+$(document).on('click', (event)=>{
+  console.log(event.target);
+  if(!event.target.matches('#login-section *')){
+    if($('#log-out-nav').is(':visible')){
+      $('#log-out-nav').hide()
+    }
+  }
+
+  if(!event.target.matches('.show-nav-btn-item')){
+    if($('#vertical-nav').is(':visible')){
+      $('#vertical-nav').hide()
+    }
+  }
+})
+
 // NAVIGATION
-$('#show-nav-btn').on('click', () => {
+$('#show-nav-btn, #show-nav-btn *').on('click', (event) => {
   $('#vertical-nav').toggle();
+  event.stopPropagation();
 });
 
 $('.nav-item').on('click', function () {
@@ -52,11 +69,17 @@ $('.nav-item').on('click', function () {
     default:
       // pass
   }
-
-  if ($('#vertical-nav').is(':visible')) {
-    $('#vertical-nav').toggle();
-  }
 });
+
+$('#login-section div span, #login-section div').on('click', (event)=>{
+  $('#log-out-nav').toggle();
+  event.stopPropagation();
+})
+
+$('#log-out-btn').on('click', ()=>{
+  localStorage.removeItem('name');
+  location.reload();
+})
 
 // TITLE
 $('.icon-box div').on('mouseover', function () {
