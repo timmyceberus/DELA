@@ -75,13 +75,13 @@
         </ul>
     </nav>
 
-    <nav id="log-out-nav"> 
+    <nav id="log-out-nav">
         <li class="nav-item">
             <ul>
                 <div id="log-out-btn">登出</div>
             </ul>
         </li>
-    </nav> 
+    </nav>
 
     <!-- Title -->
     <!-- <div id="title" class="animated fadeIn" style="background-image: url('../img/Taiwan.jpg');"> -->
@@ -128,19 +128,20 @@
                     </ul>
                     <div class="carousel-inner ">
                         <div class="carousel-item active">
-                            <a href=""><img class="d-block w-100 mx-auto" src="../img/news_1.jpg"></a>
+                            <a href="" data-toggle="modal" data-target="#exampleModalScrollable"><img
+                                    class="d-block w-100 mx-auto" src="../img/news_1.jpg"></a>
                             <div class="carousel-caption">
                                 <h3>原民新聞中心啟用</h3>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <a href=""><img class="d-block w-100 mx-auto" src="../img/news_2.jpg"></a>
+                            <a href="" data-toggle="modal" data-target="#exampleModalScrollable"><img class="d-block w-100 mx-auto" src="../img/news_2.jpg"></a>
                             <div class="carousel-caption">
                                 <h3>阿美族豐年祭正式開始</h3>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <a href=""><img class="d-block w-100 mx-auto" src="../img/news_3.jpg"></a>
+                            <a href="" data-toggle="modal" data-target="#exampleModalScrollable"><img class="d-block w-100 mx-auto" src="../img/news_3.jpg"></a>
                             <div class="carousel-caption">
                                 <h3>新一代原住民的守護</h3>
                             </div>
@@ -153,6 +154,28 @@
                     <a class="carousel-control-next" href="#demo" data-slide="next">
                         <span class="carousel-control-next-icon"></span>
                     </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalScrollableTitle">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Hello World
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
                 </div>
             </div>
         </div>
