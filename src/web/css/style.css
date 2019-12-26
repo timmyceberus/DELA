@@ -5,8 +5,8 @@
   --legend-bg1: #ffb984;
   --legend-bg2: #ff8b82;
   --legend-title: #f0f0f0;
-  --goods-bg1: #9850d6;
-  --goods-bg2: #6e5fcc;
+  --goods-bg1:	#DDFF77;
+  --goods-bg2: 	#FFFF77;
   --goods-title: #f0f0f0;
   --music-bg: #121315;
   --music-title: #80d3a6;
@@ -438,9 +438,15 @@ table {
   text-align: center;
 }
 
-#goods td {
+#goods .good_div{
   text-align: center;
-  background-color: chocolate;
+  background-image: url('../img/Totem-1.svg'); 
+  background-position: center; 
+  background-size: cover; 
+  padding: 3px; 
+  margin-top: 8px;
+  margin-bottom: 8px;
+  border-style: groove;
 }
 
 /* MUSIC */
