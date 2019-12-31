@@ -426,10 +426,30 @@ table {
 
 /* GOODS */
 #goods {
+  background-image: url('../img/Totem-3.svg'), url('../img/Totem-4.svg');
+  background-repeat: repeat-x;
+  background-color: var(--goods-bg1);
   margin-top: 25em;
   position: relative;
-  background: linear-gradient(to bottom right, var(--goods-bg1), var(--goods-bg2));
   box-shadow: 0 0 3em #121315;
+  animation-name: slide2;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes slide2 {
+  0% {
+    background-position: 0 30%, 0 90%;
+  }
+
+  50% {
+    background-position: 640px 90%, -640px 30%;
+  }
+
+  100% {
+    background-position: 1280px 30%, -1280px 90%;
+  }
 }
 
 #goods .head {
