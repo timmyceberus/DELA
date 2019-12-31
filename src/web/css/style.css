@@ -469,8 +469,10 @@ table {
   text-align: center;
 }
 
-#goods .good_div {
+#goods .goods_div {
+  color: #423a01;
   text-align: center;
+  background-color: var(--goods-bg1);
   background-image: url('../img/Totem-1.svg');
   background-position: center;
   background-size: cover;
@@ -478,6 +480,14 @@ table {
   margin-top: 8px;
   margin-bottom: 8px;
   border-style: groove;
+}
+
+#goods img {
+  transition: transform 0.3s ease;
+}
+
+#goods img:hover {
+  transform: scale(1.1);
 }
 
 /* MUSIC */
