@@ -250,6 +250,12 @@ table {
   text-shadow: black 0.1em 0.1em 0.2em;
 }
 
+#title .icon-box a,
+#title .icon-box a:hover {
+  color: white;
+  text-decoration: none;
+}
+
 /* NEWS */
 #news {
   background-image: url('../img/Totem-1.svg'), url('../img/Totem-2.svg');
