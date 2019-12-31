@@ -164,6 +164,7 @@ if (localStorage.getItem('name') !== null) {
 // AUDIO PLAY
 
 const playlist = ['', '斯瓦細格', 'Voyage', 'vavayan女人', '洄游'];
+const artists = ['', '雅維·茉芮', 'CMO樂團', '阿爆', '吳昊恩']
 const audio = document.getElementsByTagName('audio')[0];
 
 // Leading zero
@@ -202,8 +203,12 @@ function nextSong(track) {
   });
 
   // Cnange song title
-  $('.song-title').text($(`.album[data-track=${track}]`).text());
-  $('.song-artist').text($(`.singer[data-track=${track}]`).text());
+  $('.song-title')
+    .text($(`.album[data-track=${track}]`).text())
+    .attr({'title':`${playlist[track]}`});
+  $('.song-artist')
+    .text($(`.singer[data-track=${track}]`).text())
+    .attr({'title':`${artists[track]}`});
 
   // Change audio
   audio.setAttribute('src', `../audio/${playlist[track]}.mp3`);

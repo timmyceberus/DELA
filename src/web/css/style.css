@@ -556,20 +556,26 @@ table {
 }
 
 #player .song-title {
-  display: flex;
+  display: inline-block;
   flex: 1;
   width: 100%;
-  justify-content: center;
-  align-items: flex-end;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding-top: 20px;
+  text-align: center;
 }
 
 #player .song-artist {
-  display: flex;
+  display: inline-block;
   flex: 1;
   width: 100%;
-  justify-content: center;
-  padding-top: 6px;
   font-size: 12px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding-top: 0;
+  text-align: center;
 }
 
 #player .player-control-wrapper {
