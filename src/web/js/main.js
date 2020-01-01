@@ -163,8 +163,8 @@ if (localStorage.getItem('name') !== null) {
 
 // AUDIO PLAY
 
-const playlist = ['', '斯瓦細格', 'Voyage', 'vavayan女人', '洄游'];
-const artists = ['', '雅維·茉芮', 'CMO樂團', '阿爆', '吳昊恩']
+const playlist = ['', '斯瓦細格', 'Voyage', 'vavayan女人', '洄游', '渲染', '椏幹', 'cepo\'混濁了', '輕快的生活', '美麗的末日預言', '美好的日子'];
+const artists = ['', '雅維·茉芮', 'CMO樂團', '阿爆', '吳昊恩', '桑梅娟', '桑布伊', '阿努·卡力亭·沙力朋安', '以莉·高露', '芮斯', '舒米恩']
 const audio = document.getElementsByTagName('audio')[0];
 
 // Leading zero
@@ -191,7 +191,7 @@ function pause() {
 }
 
 function nextSong(track) {
-  if (track < 1 || track > 4) {
+  if (track < 1 || track > 10) {
     pause();
     return;
   }
@@ -253,7 +253,7 @@ $('.previous-button').on('click', () => {
 
 $('.next-button').on('click', () => {
   const track = parseInt($('audio').attr('track'), 10) + 1;
-  if (track <= 4) nextSong(track);
+  if (track <= 10) nextSong(track);
 });
 
 $('.progress-box').on('click', function () {
