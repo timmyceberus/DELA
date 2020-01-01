@@ -693,24 +693,23 @@ table {
 
 /* About */
 #about {
-  background-color: #121315;
-  padding: 24% 0 18% 0;
   margin-top: 25em;
   position: relative;
+  background-color: rgb(214, 214, 214);
   box-shadow: 0 0 3em #121315;
 }
 
 #about .head {
   top: 8%;
-  color: rgb(181, 173, 233);
+  color: orange;
 }
 
 #about .head span {
-  background-color: rgb(181, 173, 233);
+  background-color: orange;
 }
 
 #about .container {
-  padding: 20% 0 12% 0;
+  padding: 22% 0 12% 0; /* 螢幕變窄後仍正常顯示 */
 }
 
 /* Index Image */
@@ -763,4 +762,9 @@ footer i {
 footer i:hover {
   opacity: 0.3;
   transition: opacity 0.2s;
+}
+
+#about-text {
+  border: 1px #ccc solid;
+  line-height: 40px;
 }
