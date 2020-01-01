@@ -10,6 +10,8 @@
   --goods-title: #776b04;
   --music-bg: #121315;
   --music-title: #80d3a6;
+  --about-bg: #ccc;
+  --about-title: #00336b;
   --player-bg: #282828;
 }
 
@@ -408,11 +410,15 @@ table {
   color: white;
 }
 
+#legend p {
+  line-height: 30px;
+}
+
 #legend .tab-pane p::first-letter {
   font-weight: bold;
-  font-size: 38px;
-  color: #80d3a6;
-  line-height: 26px;
+  font-size: 45px;
+  color: #0069e2;
+  line-height: 40px;
   float: left;
   padding: 10px 5px 0 0;
 }
@@ -695,21 +701,28 @@ table {
 #about {
   margin-top: 25em;
   position: relative;
-  background-color: rgb(214, 214, 214);
+  background-color: var(--about-bg);
   box-shadow: 0 0 3em #121315;
 }
 
 #about .head {
   top: 8%;
-  color: orange;
+  color: var(--about-title);
 }
 
 #about .head span {
-  background-color: orange;
+  background-color: var(--about-title);
 }
 
 #about .container {
-  padding: 22% 0 12% 0; /* 螢幕變窄後仍正常顯示 */
+  padding: 15% 0 12% 0; /* 螢幕變窄後仍正常顯示 */
+}
+
+#about-text {
+  /* border: 1px var(--about-title) solid; */
+  line-height: 40px;
+  font-size: 18px;
+  color: var(--about-title);
 }
 
 /* Index Image */
@@ -752,6 +765,12 @@ footer h1 {
   padding-top: 50px;
 }
 
+footer a,
+footer a:hover {
+  color: wheat;
+}
+
+
 footer i {
   font-size: 30px;
   margin: auto 5px;
@@ -762,9 +781,4 @@ footer i {
 footer i:hover {
   opacity: 0.3;
   transition: opacity 0.2s;
-}
-
-#about-text {
-  border: 1px #ccc solid;
-  line-height: 40px;
 }
