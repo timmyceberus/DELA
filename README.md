@@ -32,7 +32,7 @@ git clone https://github.com/benebsiny/DELA.git
 ```
 2. 進入專案資料夾
 ```SHELL=
-git npm i
-git npm start
+npm i
+npm start
 ```
 3. http://127.0.0.1:3000
